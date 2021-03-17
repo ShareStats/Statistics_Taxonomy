@@ -23,18 +23,19 @@ for(row in 1:n.cols) {
 
       value <- as.character(taw.taxonomy.levels[row, col])
       
-      if(col == 1 && !is.na(taw.taxonomy.levels[row, col])) level1 = value
-      if(col == 2 && !is.na(taw.taxonomy.levels[row, col])) level2 = value
-      if(col == 3 && !is.na(taw.taxonomy.levels[row, col])) level3 = value
-      if(col == 4 && !is.na(taw.taxonomy.levels[row, col])) level4 = value
+      # [TODO: Sharon] Last level value still carries over to new level 1
+      # [1] "Variable type Ratio  " should be [1] "Variable type   "
+      
+      if(col == 1 && !is.na(taw.taxonomy.levels[row, col])) level1 = value; # level2 = character();
+      if(col == 2 && !is.na(taw.taxonomy.levels[row, col])) level2 = value; # level3 = character();
+      if(col == 3 && !is.na(taw.taxonomy.levels[row, col])) level3 = value; # level4 = character();
+      if(col == 4 && !is.na(taw.taxonomy.levels[row, col])) level4 = value;
       
       print(paste(level1, level2, level3, level4))
       
-      terms <- append(terms, value)
+      
       
     }
-    
-    
     
   }
 }
