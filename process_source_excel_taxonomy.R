@@ -18,7 +18,7 @@ for(row in 1:n.cols) {
   
   for(col in 1:4) {
     
-    # Determine top levels
+    # Only print if cels are not empty
     if(!is.na(taw.taxonomy.levels[row, col])) {
 
       value <- as.character(taw.taxonomy.levels[row, col])
@@ -28,9 +28,14 @@ for(row in 1:n.cols) {
       if(col == 3 && !is.na(taw.taxonomy.levels[row, col])) { level3 = value; level4 = character(); }
       if(col == 4 && !is.na(taw.taxonomy.levels[row, col])) level4 = value;
       
+      
+      if(length(level2) == 0 && length(level3) == 0 && length(level4) == 0) print("L1")
+      if(length(level2) != 0 && length(level3) == 0 && length(level4) == 0) print("L2")
+      if(length(level2) != 0 && length(level3) != 0 && length(level4) == 0) print("L3")
+      if(length(level2) != 0 && length(level3) != 0 && length(level4) != 0) print("L4")
+
+      
       print(paste(level1, level2, level3, level4))
-      
-      
       
     }
     
