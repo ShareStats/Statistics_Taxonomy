@@ -1,0 +1,16 @@
+---
+title: "Test Visualise YAML"
+author: "Klinkenberg"
+date: "3/17/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+# install.packages("collapsibleTree")
+library("collapsibleTree")
+load("nodes.rdata")
+
+collapsibleTree(osNode,
+                width = 800
+                )
+```

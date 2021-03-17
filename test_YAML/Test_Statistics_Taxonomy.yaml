@@ -1,0 +1,16 @@
+# YAML test
+# https://adeelk93.github.io/collapsibleTree/
+# https://cran.r-project.org/web/packages/data.tree/vignettes/data.tree.html
+
+name: Descriptive Statistics
+nl: Beschrijvende Statistiek
+Summary Statistics:
+  nl: Kengetallen
+  Measures of Location:
+    nl: Locatie maten
+    Mean:
+      nl: gemiddelde
+    Median:
+      nl: mediaan
+    Mode:
+      nl: modus
