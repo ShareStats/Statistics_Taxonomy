@@ -28,7 +28,7 @@ for(row in 1:n.cols) {
       if(col == 3 && !is.na(taw.taxonomy.levels[row, col])) { level3 = value; level4 = character(); }
       if(col == 4 && !is.na(taw.taxonomy.levels[row, col])) level4 = value;
       
-      
+      # Determine level per line
       if(length(level2) == 0 && length(level3) == 0 && length(level4) == 0) print("L1")
       if(length(level2) != 0 && length(level3) == 0 && length(level4) == 0) print("L2")
       if(length(level2) != 0 && length(level3) != 0 && length(level4) == 0) print("L3")
