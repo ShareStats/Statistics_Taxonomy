@@ -19,7 +19,7 @@ library(flexdashboard)
 
 To add meta tags to your r-exams markdown file add `exsection:` to the `Meta-information` of your markdown file.
 
-You can ad multiple sections by seperating with a comma. You can copy the desired pat from the list below.
+You can ad multiple sections by seperating with a comma. You can copy the desired path from the list below. You may add multiple path by seperation with a comma. No new lines allowed though.
 
 ```{}
 Meta-information
