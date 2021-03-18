@@ -37,14 +37,14 @@ We have four categories that can be applied.
 
 <ol class="bullet">
 <li><strong>Type:</strong> 
-<span id="calc"  class="tag" onclick="copy_data(calc)">Calculation</span> 
-<span id="cas1"  class="tag" onclick="copy_data(cas1)">Case</span> 
-<span id="conc"  class="tag" onclick="copy_data(conc)">Conceptual</span> 
-<span id="crg"   class="tag" onclick="copy_data(crg)">Creating graphs</span>  
-<span id="dat"   class="tag" onclick="copy_data(dat)">Data manipulation</span> 
-<span id="intgr" class="tag" onclick="copy_data(intgr)">Interpretating graph</span>  
-<span id="intou" class="tag" onclick="copy_data(intou)">Interpretating output</span>  
-<span id="an"    class="tag" onclick="copy_data(an)">Performing analysis</span>  
+<span id="calc"  class="tag" onclick="copy_data(calc)">Calculation</span>
+<span id="cas1"  class="tag" onclick="copy_data(cas1)">Case</span>
+<span id="conc"  class="tag" onclick="copy_data(conc)">Conceptual</span>
+<span id="crg"   class="tag" onclick="copy_data(crg)">Creating graphs</span>
+<span id="dat"   class="tag" onclick="copy_data(dat)">Data manipulation</span>
+<span id="intgr" class="tag" onclick="copy_data(intgr)">Interpretating graph</span>
+<span id="intou" class="tag" onclick="copy_data(intou)">Interpretating output</span>
+<span id="an"    class="tag" onclick="copy_data(an)">Performing analysis</span>
 <span id="tch"   class="tag" onclick="copy_data(tch)">Test choice</span>
 </li>
 <li>Program: SPSS, JASP, R, STATA, Excel, Calculator, Jamovi</li>
