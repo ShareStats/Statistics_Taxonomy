@@ -53,9 +53,9 @@ for(row in 1:n.cols) {
  
       # Add list elements per level     
       if(level == 1) cat(paste0('<li alt="',level1,'">',level1,"</li>"), file = htmlList, sep = "\n")
-      if(level == 2) cat(paste0('<li alt="',level1," / ",level2,'">',level2,"</li>"), file = htmlList, sep = "\n")
-      if(level == 3) cat(paste0('<li alt="',level1," / ",level2," / ",level3,'">',level3,"</li>"), file = htmlList, sep = "\n")
-      if(level == 4) cat(paste0('<li alt="',level1," / ",level2," / ",level3," / ",level4,'">',level4,"</li>"), file = htmlList, sep = "\n")
+      if(level == 2) cat(paste0('  <li alt="',level1," / ",level2,'">',level2,"</li>"), file = htmlList, sep = "\n")
+      if(level == 3) cat(paste0('    <li alt="',level1," / ",level2," / ",level3,'">',level3,"</li>"), file = htmlList, sep = "\n")
+      if(level == 4) cat(paste0('      <li alt="',level1," / ",level2," / ",level3," / ",level4,'">',level4,"</li>"), file = htmlList, sep = "\n")
 
     }
   }

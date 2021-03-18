@@ -1,0 +1,56 @@
+---
+title: "ShareStats Statistics Taxonomy"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 2
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+## Assigning taxonomy {.tabset}
+
+### Statistics Taxonomy
+
+```{r, echo=FALSE}
+htmltools::includeHTML("taxonomy_list.html")
+```
+
+### Meta information
+
+To add meta tags to your r-exams markdown file add ```exextra[]:` to the ```Meta-information` of your markdown file.
+
+We have four categories that can be applied.
+
+* Type: Calculation, Case, Conceptual, Creating graphs, Data manipulation, Interpretating graph, Interpretating output, Performing analysis, Test choice
+* Program: SPSS, JASP, R, STATA, Excel, Calculator, Jamovi
+* Language: English, Dutch
+* Level: Statistical Literacy, Statistical Reasoning, Statistical Thinking 
+
+You can use more than one tag per category. 
+
+```{}
+Meta-information
+================
+exextra[Type]: Calculation, Data manipulation
+exextra[Program]: SPSS
+exextra[Language]: English
+exextra[Level]: Statistical Literacy
+```
+
+
+```{r, echo=FALSE}
+library(readxl)
+library(DT)
+type <- read_excel("source/Taxonomie ShareStats versie 17 maart 2021.xlsx", sheet = 2)
+
+datatable(type[1:9,-2])
+```
+
+
+## ShareStats project
+
+More information on the ShareStats project can be found on [our website](www.sharestats.nl).
