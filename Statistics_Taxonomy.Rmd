@@ -24,6 +24,7 @@ Meta-information
 exsection: Descriptive statistics / Summary Statistics / Measures of Location / Median, Descriptive statistics / Summary Statistics / Measures of Spread / Standard Deviation
 ```
 
+#### Click to copy
 
 ```{r, echo=FALSE}
 htmltools::includeHTML("taxonomy_list.html")
@@ -34,6 +35,8 @@ htmltools::includeHTML("taxonomy_list.html")
 To add meta tags to your r-exams markdown file add ```exextra[]:` to the ```Meta-information` of your markdown file.
 
 We have four categories that can be applied.
+
+#### Click to copy
 
 <ol class="bullet">
 <li><strong>Type:</strong> 
