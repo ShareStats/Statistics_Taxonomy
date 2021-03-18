@@ -21,7 +21,7 @@ You can ad multiple sections by seperating with a comma. You can copy the desire
 ```{}
 Meta-information
 ================
-exsection: 
+exsection: Descriptive statistics / Summary Statistics / Measures of Location / Median, Descriptive statistics / Summary Statistics / Measures of Spread / Standard Deviation
 ```
 
 
@@ -35,10 +35,22 @@ To add meta tags to your r-exams markdown file add ```exextra[]:` to the ```Meta
 
 We have four categories that can be applied.
 
-* Type: Calculation, Case, Conceptual, Creating graphs, Data manipulation, Interpretating graph, Interpretating output, Performing analysis, Test choice
-* Program: SPSS, JASP, R, STATA, Excel, Calculator, Jamovi
-* Language: English, Dutch
-* Level: Statistical Literacy, Statistical Reasoning, Statistical Thinking 
+<ol class="bullet">
+<li><strong>Type:</strong> 
+<span id="calc"  class="tag" onclick="copy_data(calc)">Calculation</span> 
+<span id="cas1"  class="tag" onclick="copy_data(cas1)">Case</span> 
+<span id="conc"  class="tag" onclick="copy_data(conc)">Conceptual</span> 
+<span id="crg"   class="tag" onclick="copy_data(crg)">Creating graphs</span>  
+<span id="dat"   class="tag" onclick="copy_data(dat)">Data manipulation</span> 
+<span id="intgr" class="tag" onclick="copy_data(intgr)">Interpretating graph</span>  
+<span id="intou" class="tag" onclick="copy_data(intou)">Interpretating output</span>  
+<span id="an"    class="tag" onclick="copy_data(an)">Performing analysis</span>  
+<span id="tch"   class="tag" onclick="copy_data(tch)">Test choice</span>
+</li>
+<li>Program: SPSS, JASP, R, STATA, Excel, Calculator, Jamovi</li>
+<li>Language: English, Dutch</li>
+<li>Level: Statistical Literacy, Statistical Reasoning, Statistical Thinking</li>
+</ol>
 
 You can use more than one tag per category. 
 
@@ -52,7 +64,7 @@ exextra[Level]: Statistical Literacy
 ```
 
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
 library(readxl)
 library(DT)
 type <- read_excel("source/Taxonomie ShareStats versie 17 maart 2021.xlsx", sheet = 2)
