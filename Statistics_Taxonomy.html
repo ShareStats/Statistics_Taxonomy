@@ -4079,353 +4079,366 @@ div.tocify {
 </div>
 
 
+<script>function copy_data(containerid) {
+  var range = document.createRange();
+  range.selectNode(containerid); //changed here
+  window.getSelection().removeAllRanges(); 
+  window.getSelection().addRange(range); 
+  document.execCommand("copy");
+  window.getSelection().removeAllRanges();
+}</script>
 <div id="assigning-taxonomy" class="section level2 tabset">
 <h2>Assigning taxonomy</h2>
 <div id="statistics-taxonomy" class="section level3">
 <h3>Statistics Taxonomy</h3>
+<p>To add meta tags to your r-exams markdown file add <code>exsection:</code> to the <code>Meta-information</code> of your markdown file.</p>
+<p>You can ad multiple sections by seperating with a comma. You can copy the desired pat from the list below.</p>
+<pre><code>Meta-information
+================
+exsection: </code></pre>
 <ul>
-<li alt="Measurement Level">Measurement Level</li>
+<li><span id="c1">Measurement Level</span> <button type="button" onclick="copy_data(c1)">copy</button></li>
 <ul>
-  <li alt="Measurement Level / Nominal">Nominal</li>
-  <li alt="Measurement Level / Ordinal">Ordinal</li>
-  <li alt="Measurement Level / Interval">Interval</li>
-  <li alt="Measurement Level / Ratio">Ratio</li>
+  <li><span id="c2">Measurement Level / Nominal</span> <button type="button" onclick="copy_data(c2)">copy</button></li>
+  <li><span id="c3">Measurement Level / Ordinal</span> <button type="button" onclick="copy_data(c3)">copy</button></li>
+  <li><span id="c4">Measurement Level / Interval</span> <button type="button" onclick="copy_data(c4)">copy</button></li>
+  <li><span id="c5">Measurement Level / Ratio</span> <button type="button" onclick="copy_data(c5)">copy</button></li>
 </ul>
-<li alt="Variable type">Variable type</li>
+<li><span id="c6">Variable type</span> <button type="button" onclick="copy_data(c6)">copy</button></li>
 <ul>
-  <li alt="Variable type / Discrete variable">Discrete variable</li>
-  <li alt="Variable type / Continuous variable">Continuous variable</li>
+  <li><span id="c7">Variable type / Discrete variable</span> <button type="button" onclick="copy_data(c7)">copy</button></li>
+  <li><span id="c8">Variable type / Continuous variable</span> <button type="button" onclick="copy_data(c8)">copy</button></li>
 </ul>
-<li alt="Descriptive statistics">Descriptive statistics</li>
+<li><span id="c9">Descriptive statistics</span> <button type="button" onclick="copy_data(c9)">copy</button></li>
 <ul>
-  <li alt="Descriptive statistics / Summary Statistics">Summary Statistics</li>
+  <li><span id="c10">Descriptive statistics / Summary Statistics</span> <button type="button" onclick="copy_data(c10)">copy</button></li>
 <ul>
-    <li alt="Descriptive statistics / Summary Statistics / Measures of Location">Measures of Location</li>
+    <li><span id="c11">Descriptive statistics / Summary Statistics / Measures of Location</span> <button type="button" onclick="copy_data(c11)">copy</button></li>
 <ul>
-      <li alt="Descriptive statistics / Summary Statistics / Measures of Location / Mean">Mean</li>
-      <li alt="Descriptive statistics / Summary Statistics / Measures of Location / Median">Median</li>
-      <li alt="Descriptive statistics / Summary Statistics / Measures of Location / Mode">Mode</li>
+      <li><span id="c12">Descriptive statistics / Summary Statistics / Measures of Location / Mean</span> <button type="button" onclick="copy_data(c12)">copy</button></li>
+      <li><span id="c13">Descriptive statistics / Summary Statistics / Measures of Location / Median</span> <button type="button" onclick="copy_data(c13)">copy</button></li>
+      <li><span id="c14">Descriptive statistics / Summary Statistics / Measures of Location / Mode</span> <button type="button" onclick="copy_data(c14)">copy</button></li>
 </ul>
-    <li alt="Descriptive statistics / Summary Statistics / Measures of Spread">Measures of Spread</li>
+    <li><span id="c15">Descriptive statistics / Summary Statistics / Measures of Spread</span> <button type="button" onclick="copy_data(c15)">copy</button></li>
 <ul>
-      <li alt="Descriptive statistics / Summary Statistics / Measures of Spread / Range">Range</li>
-      <li alt="Descriptive statistics / Summary Statistics / Measures of Spread / Standard Deviation">Standard Deviation</li>
-      <li alt="Descriptive statistics / Summary Statistics / Measures of Spread / Variance">Variance</li>
-      <li alt="Descriptive statistics / Summary Statistics / Measures of Spread / Interquartile Range">Interquartile Range</li>
+      <li><span id="c16">Descriptive statistics / Summary Statistics / Measures of Spread / Range</span> <button type="button" onclick="copy_data(c16)">copy</button></li>
+      <li><span id="c17">Descriptive statistics / Summary Statistics / Measures of Spread / Standard Deviation</span> <button type="button" onclick="copy_data(c17)">copy</button></li>
+      <li><span id="c18">Descriptive statistics / Summary Statistics / Measures of Spread / Variance</span> <button type="button" onclick="copy_data(c18)">copy</button></li>
+      <li><span id="c19">Descriptive statistics / Summary Statistics / Measures of Spread / Interquartile Range</span> <button type="button" onclick="copy_data(c19)">copy</button></li>
 </ul>
-    <li alt="Descriptive statistics / Summary Statistics / Bivariate statistics">Bivariate statistics</li>
+    <li><span id="c20">Descriptive statistics / Summary Statistics / Bivariate statistics</span> <button type="button" onclick="copy_data(c20)">copy</button></li>
 <ul>
-      <li alt="Descriptive statistics / Summary Statistics / Bivariate statistics / Correlation">Correlation</li>
-      <li alt="Descriptive statistics / Summary Statistics / Bivariate statistics / Covariance">Covariance</li>
+      <li><span id="c21">Descriptive statistics / Summary Statistics / Bivariate statistics / Correlation</span> <button type="button" onclick="copy_data(c21)">copy</button></li>
+      <li><span id="c22">Descriptive statistics / Summary Statistics / Bivariate statistics / Covariance</span> <button type="button" onclick="copy_data(c22)">copy</button></li>
 </ul>
-    <li alt="Descriptive statistics / Summary Statistics / Outliers">Outliers</li>
-    <li alt="Descriptive statistics / Summary Statistics / Odds ratio">Odds ratio</li>
-    <li alt="Descriptive statistics / Summary Statistics / Proportion">Proportion</li>
-    <li alt="Descriptive statistics / Summary Statistics / Conditional proportion">Conditional proportion</li>
+    <li><span id="c23">Descriptive statistics / Summary Statistics / Outliers</span> <button type="button" onclick="copy_data(c23)">copy</button></li>
+    <li><span id="c24">Descriptive statistics / Summary Statistics / Odds ratio</span> <button type="button" onclick="copy_data(c24)">copy</button></li>
+    <li><span id="c25">Descriptive statistics / Summary Statistics / Proportion</span> <button type="button" onclick="copy_data(c25)">copy</button></li>
+    <li><span id="c26">Descriptive statistics / Summary Statistics / Conditional proportion</span> <button type="button" onclick="copy_data(c26)">copy</button></li>
 </ul>
-  <li alt="Descriptive statistics / Score interpretation">Score interpretation</li>
+  <li><span id="c27">Descriptive statistics / Score interpretation</span> <button type="button" onclick="copy_data(c27)">copy</button></li>
 <ul>
-    <li alt="Descriptive statistics / Score interpretation / z-score">z-score</li>
-    <li alt="Descriptive statistics / Score interpretation / Percentile">Percentile</li>
+    <li><span id="c28">Descriptive statistics / Score interpretation / z-score</span> <button type="button" onclick="copy_data(c28)">copy</button></li>
+    <li><span id="c29">Descriptive statistics / Score interpretation / Percentile</span> <button type="button" onclick="copy_data(c29)">copy</button></li>
 </ul>
-  <li alt="Descriptive statistics / Data representation">Data representation</li>
+  <li><span id="c30">Descriptive statistics / Data representation</span> <button type="button" onclick="copy_data(c30)">copy</button></li>
 <ul>
-    <li alt="Descriptive statistics / Data representation / Graphs">Graphs</li>
+    <li><span id="c31">Descriptive statistics / Data representation / Graphs</span> <button type="button" onclick="copy_data(c31)">copy</button></li>
 <ul>
-      <li alt="Descriptive statistics / Data representation / Graphs / Histogram">Histogram</li>
-      <li alt="Descriptive statistics / Data representation / Graphs / Bar graph">Bar graph</li>
-      <li alt="Descriptive statistics / Data representation / Graphs / Boxplot">Boxplot</li>
-      <li alt="Descriptive statistics / Data representation / Graphs / Scatterplot">Scatterplot</li>
-      <li alt="Descriptive statistics / Data representation / Graphs / Pie chart">Pie chart</li>
-      <li alt="Descriptive statistics / Data representation / Graphs / Venn diagram">Venn diagram</li>
-      <li alt="Descriptive statistics / Data representation / Graphs / Stem and leaf plot">Stem and leaf plot</li>
+      <li><span id="c32">Descriptive statistics / Data representation / Graphs / Histogram</span> <button type="button" onclick="copy_data(c32)">copy</button></li>
+      <li><span id="c33">Descriptive statistics / Data representation / Graphs / Bar graph</span> <button type="button" onclick="copy_data(c33)">copy</button></li>
+      <li><span id="c34">Descriptive statistics / Data representation / Graphs / Boxplot</span> <button type="button" onclick="copy_data(c34)">copy</button></li>
+      <li><span id="c35">Descriptive statistics / Data representation / Graphs / Scatterplot</span> <button type="button" onclick="copy_data(c35)">copy</button></li>
+      <li><span id="c36">Descriptive statistics / Data representation / Graphs / Pie chart</span> <button type="button" onclick="copy_data(c36)">copy</button></li>
+      <li><span id="c37">Descriptive statistics / Data representation / Graphs / Venn diagram</span> <button type="button" onclick="copy_data(c37)">copy</button></li>
+      <li><span id="c38">Descriptive statistics / Data representation / Graphs / Stem and leaf plot</span> <button type="button" onclick="copy_data(c38)">copy</button></li>
 </ul>
-    <li alt="Descriptive statistics / Data representation / Tables">Tables</li>
+    <li><span id="c39">Descriptive statistics / Data representation / Tables</span> <button type="button" onclick="copy_data(c39)">copy</button></li>
 <ul>
-      <li alt="Descriptive statistics / Data representation / Tables / Frequency table">Frequency table</li>
-      <li alt="Descriptive statistics / Data representation / Tables / Contingency table">Contingency table</li>
+      <li><span id="c40">Descriptive statistics / Data representation / Tables / Frequency table</span> <button type="button" onclick="copy_data(c40)">copy</button></li>
+      <li><span id="c41">Descriptive statistics / Data representation / Tables / Contingency table</span> <button type="button" onclick="copy_data(c41)">copy</button></li>
 </ul></ul></ul>
-<li alt="Inferential Statistics">Inferential Statistics</li>
+<li><span id="c42">Inferential Statistics</span> <button type="button" onclick="copy_data(c42)">copy</button></li>
 <ul>
-  <li alt="Inferential Statistics / Sampling Distributions">Sampling Distributions</li>
+  <li><span id="c43">Inferential Statistics / Sampling Distributions</span> <button type="button" onclick="copy_data(c43)">copy</button></li>
 <ul>
-    <li alt="Inferential Statistics / Sampling Distributions / Sample mean">Sample mean</li>
-    <li alt="Inferential Statistics / Sampling Distributions / Sample proportion">Sample proportion</li>
-    <li alt="Inferential Statistics / Sampling Distributions / Difference two means">Difference two means</li>
-    <li alt="Inferential Statistics / Sampling Distributions / Correlation">Correlation</li>
+    <li><span id="c44">Inferential Statistics / Sampling Distributions / Sample mean</span> <button type="button" onclick="copy_data(c44)">copy</button></li>
+    <li><span id="c45">Inferential Statistics / Sampling Distributions / Sample proportion</span> <button type="button" onclick="copy_data(c45)">copy</button></li>
+    <li><span id="c46">Inferential Statistics / Sampling Distributions / Difference two means</span> <button type="button" onclick="copy_data(c46)">copy</button></li>
+    <li><span id="c47">Inferential Statistics / Sampling Distributions / Correlation</span> <button type="button" onclick="copy_data(c47)">copy</button></li>
 </ul>
-  <li alt="Inferential Statistics / NHST">NHST</li>
+  <li><span id="c48">Inferential Statistics / NHST</span> <button type="button" onclick="copy_data(c48)">copy</button></li>
 <ul>
-    <li alt="Inferential Statistics / NHST / Hypothesis">Hypothesis</li>
+    <li><span id="c49">Inferential Statistics / NHST / Hypothesis</span> <button type="button" onclick="copy_data(c49)">copy</button></li>
 <ul>
-      <li alt="Inferential Statistics / NHST / Hypothesis / Null hypothesis">Null hypothesis</li>
-      <li alt="Inferential Statistics / NHST / Hypothesis / Alternative hypothesis">Alternative hypothesis</li>
-      <li alt="Inferential Statistics / NHST / Hypothesis / One sided hypothesis">One sided hypothesis</li>
-      <li alt="Inferential Statistics / NHST / Hypothesis / Two sided hypothesis">Two sided hypothesis</li>
+      <li><span id="c50">Inferential Statistics / NHST / Hypothesis / Null hypothesis</span> <button type="button" onclick="copy_data(c50)">copy</button></li>
+      <li><span id="c51">Inferential Statistics / NHST / Hypothesis / Alternative hypothesis</span> <button type="button" onclick="copy_data(c51)">copy</button></li>
+      <li><span id="c52">Inferential Statistics / NHST / Hypothesis / One sided hypothesis</span> <button type="button" onclick="copy_data(c52)">copy</button></li>
+      <li><span id="c53">Inferential Statistics / NHST / Hypothesis / Two sided hypothesis</span> <button type="button" onclick="copy_data(c53)">copy</button></li>
 </ul>
-    <li alt="Inferential Statistics / NHST / Test statistic">Test statistic</li>
+    <li><span id="c54">Inferential Statistics / NHST / Test statistic</span> <button type="button" onclick="copy_data(c54)">copy</button></li>
 <ul>
-      <li alt="Inferential Statistics / NHST / Test statistic / t-statistic">t-statistic</li>
-      <li alt="Inferential Statistics / NHST / Test statistic / F-statistic">F-statistic</li>
-      <li alt="Inferential Statistics / NHST / Test statistic / Chi-squared">Chi-squared</li>
-      <li alt="Inferential Statistics / NHST / Test statistic / z-statistic">z-statistic</li>
+      <li><span id="c55">Inferential Statistics / NHST / Test statistic / t-statistic</span> <button type="button" onclick="copy_data(c55)">copy</button></li>
+      <li><span id="c56">Inferential Statistics / NHST / Test statistic / F-statistic</span> <button type="button" onclick="copy_data(c56)">copy</button></li>
+      <li><span id="c57">Inferential Statistics / NHST / Test statistic / Chi-squared</span> <button type="button" onclick="copy_data(c57)">copy</button></li>
+      <li><span id="c58">Inferential Statistics / NHST / Test statistic / z-statistic</span> <button type="button" onclick="copy_data(c58)">copy</button></li>
 </ul>
-    <li alt="Inferential Statistics / NHST / Statistical errors">Statistical errors</li>
+    <li><span id="c59">Inferential Statistics / NHST / Statistical errors</span> <button type="button" onclick="copy_data(c59)">copy</button></li>
 <ul>
-      <li alt="Inferential Statistics / NHST / Statistical errors / Type I error">Type I error</li>
-      <li alt="Inferential Statistics / NHST / Statistical errors / Type II error">Type II error</li>
+      <li><span id="c60">Inferential Statistics / NHST / Statistical errors / Type I error</span> <button type="button" onclick="copy_data(c60)">copy</button></li>
+      <li><span id="c61">Inferential Statistics / NHST / Statistical errors / Type II error</span> <button type="button" onclick="copy_data(c61)">copy</button></li>
 </ul>
-    <li alt="Inferential Statistics / NHST / Power">Power</li>
-    <li alt="Inferential Statistics / NHST / Significance level">Significance level</li>
+    <li><span id="c62">Inferential Statistics / NHST / Power</span> <button type="button" onclick="copy_data(c62)">copy</button></li>
+    <li><span id="c63">Inferential Statistics / NHST / Significance level</span> <button type="button" onclick="copy_data(c63)">copy</button></li>
 <ul>
-      <li alt="Inferential Statistics / NHST / Significance level / Critical value">Critical value</li>
+      <li><span id="c64">Inferential Statistics / NHST / Significance level / Critical value</span> <button type="button" onclick="copy_data(c64)">copy</button></li>
 </ul>
-    <li alt="Inferential Statistics / NHST / p-value">p-value</li>
+    <li><span id="c65">Inferential Statistics / NHST / p-value</span> <button type="button" onclick="copy_data(c65)">copy</button></li>
 </ul>
-  <li alt="Inferential Statistics / Effect size">Effect size</li>
+  <li><span id="c66">Inferential Statistics / Effect size</span> <button type="button" onclick="copy_data(c66)">copy</button></li>
 <ul>
-    <li alt="Inferential Statistics / Effect size / Cohen&#39;s d">Cohen&#39;s d</li>
-    <li alt="Inferential Statistics / Effect size / Cramer&#39;s V">Cramer&#39;s V</li>
-    <li alt="Inferential Statistics / Effect size / Phi coefficient">Phi coefficient</li>
-    <li alt="Inferential Statistics / Effect size / Eta squared">Eta squared</li>
-    <li alt="Inferential Statistics / Effect size / Omega squared">Omega squared</li>
+    <li><span id="c67">Inferential Statistics / Effect size / Cohen&#39;s d</span> <button type="button" onclick="copy_data(c67)">copy</button></li>
+    <li><span id="c68">Inferential Statistics / Effect size / Cramer&#39;s V</span> <button type="button" onclick="copy_data(c68)">copy</button></li>
+    <li><span id="c69">Inferential Statistics / Effect size / Phi coefficient</span> <button type="button" onclick="copy_data(c69)">copy</button></li>
+    <li><span id="c70">Inferential Statistics / Effect size / Eta squared</span> <button type="button" onclick="copy_data(c70)">copy</button></li>
+    <li><span id="c71">Inferential Statistics / Effect size / Omega squared</span> <button type="button" onclick="copy_data(c71)">copy</button></li>
 </ul>
-  <li alt="Inferential Statistics / Confidence Intervals">Confidence Intervals</li>
+  <li><span id="c72">Inferential Statistics / Confidence Intervals</span> <button type="button" onclick="copy_data(c72)">copy</button></li>
 <ul>
-    <li alt="Inferential Statistics / Confidence Intervals / Confidence level">Confidence level</li>
-    <li alt="Inferential Statistics / Confidence Intervals / Testing">Testing</li>
-    <li alt="Inferential Statistics / Confidence Intervals / Width">Width</li>
-    <li alt="Inferential Statistics / Confidence Intervals / Margin of error">Margin of error</li>
+    <li><span id="c73">Inferential Statistics / Confidence Intervals / Confidence level</span> <button type="button" onclick="copy_data(c73)">copy</button></li>
+    <li><span id="c74">Inferential Statistics / Confidence Intervals / Testing</span> <button type="button" onclick="copy_data(c74)">copy</button></li>
+    <li><span id="c75">Inferential Statistics / Confidence Intervals / Width</span> <button type="button" onclick="copy_data(c75)">copy</button></li>
+    <li><span id="c76">Inferential Statistics / Confidence Intervals / Margin of error</span> <button type="button" onclick="copy_data(c76)">copy</button></li>
 </ul>
-  <li alt="Inferential Statistics / Parametric Techniques">Parametric Techniques</li>
+  <li><span id="c77">Inferential Statistics / Parametric Techniques</span> <button type="button" onclick="copy_data(c77)">copy</button></li>
 <ul>
-    <li alt="Inferential Statistics / Parametric Techniques / z-test">z-test</li>
+    <li><span id="c78">Inferential Statistics / Parametric Techniques / z-test</span> <button type="button" onclick="copy_data(c78)">copy</button></li>
 <ul>
-      <li alt="Inferential Statistics / Parametric Techniques / z-test / One sample mean">One sample mean</li>
-      <li alt="Inferential Statistics / Parametric Techniques / z-test / Independent samples means">Independent samples means</li>
-      <li alt="Inferential Statistics / Parametric Techniques / z-test / One proportion">One proportion</li>
-      <li alt="Inferential Statistics / Parametric Techniques / z-test / Two proportions">Two proportions</li>
+      <li><span id="c79">Inferential Statistics / Parametric Techniques / z-test / One sample mean</span> <button type="button" onclick="copy_data(c79)">copy</button></li>
+      <li><span id="c80">Inferential Statistics / Parametric Techniques / z-test / Independent samples means</span> <button type="button" onclick="copy_data(c80)">copy</button></li>
+      <li><span id="c81">Inferential Statistics / Parametric Techniques / z-test / One proportion</span> <button type="button" onclick="copy_data(c81)">copy</button></li>
+      <li><span id="c82">Inferential Statistics / Parametric Techniques / z-test / Two proportions</span> <button type="button" onclick="copy_data(c82)">copy</button></li>
 </ul>
-    <li alt="Inferential Statistics / Parametric Techniques / t-test">t-test</li>
+    <li><span id="c83">Inferential Statistics / Parametric Techniques / t-test</span> <button type="button" onclick="copy_data(c83)">copy</button></li>
 <ul>
-      <li alt="Inferential Statistics / Parametric Techniques / t-test / One sample mean">One sample mean</li>
-      <li alt="Inferential Statistics / Parametric Techniques / t-test / Independent samples means">Independent samples means</li>
-      <li alt="Inferential Statistics / Parametric Techniques / t-test / Paired samples">Paired samples</li>
-      <li alt="Inferential Statistics / Parametric Techniques / t-test / Test for correlation">Test for correlation</li>
+      <li><span id="c84">Inferential Statistics / Parametric Techniques / t-test / One sample mean</span> <button type="button" onclick="copy_data(c84)">copy</button></li>
+      <li><span id="c85">Inferential Statistics / Parametric Techniques / t-test / Independent samples means</span> <button type="button" onclick="copy_data(c85)">copy</button></li>
+      <li><span id="c86">Inferential Statistics / Parametric Techniques / t-test / Paired samples</span> <button type="button" onclick="copy_data(c86)">copy</button></li>
+      <li><span id="c87">Inferential Statistics / Parametric Techniques / t-test / Test for correlation</span> <button type="button" onclick="copy_data(c87)">copy</button></li>
 </ul>
-    <li alt="Inferential Statistics / Parametric Techniques / Correlations">Correlations</li>
+    <li><span id="c88">Inferential Statistics / Parametric Techniques / Correlations</span> <button type="button" onclick="copy_data(c88)">copy</button></li>
 <ul>
-      <li alt="Inferential Statistics / Parametric Techniques / Correlations / Pearson">Pearson</li>
-      <li alt="Inferential Statistics / Parametric Techniques / Correlations / Spearman">Spearman</li>
-      <li alt="Inferential Statistics / Parametric Techniques / Correlations / Point biserial">Point biserial</li>
-      <li alt="Inferential Statistics / Parametric Techniques / Correlations / Biserial">Biserial</li>
-      <li alt="Inferential Statistics / Parametric Techniques / Correlations / Phi">Phi</li>
+      <li><span id="c89">Inferential Statistics / Parametric Techniques / Correlations / Pearson</span> <button type="button" onclick="copy_data(c89)">copy</button></li>
+      <li><span id="c90">Inferential Statistics / Parametric Techniques / Correlations / Spearman</span> <button type="button" onclick="copy_data(c90)">copy</button></li>
+      <li><span id="c91">Inferential Statistics / Parametric Techniques / Correlations / Point biserial</span> <button type="button" onclick="copy_data(c91)">copy</button></li>
+      <li><span id="c92">Inferential Statistics / Parametric Techniques / Correlations / Biserial</span> <button type="button" onclick="copy_data(c92)">copy</button></li>
+      <li><span id="c93">Inferential Statistics / Parametric Techniques / Correlations / Phi</span> <button type="button" onclick="copy_data(c93)">copy</button></li>
 </ul>
-    <li alt="Inferential Statistics / Parametric Techniques / Cross tables">Cross tables</li>
+    <li><span id="c94">Inferential Statistics / Parametric Techniques / Cross tables</span> <button type="button" onclick="copy_data(c94)">copy</button></li>
 <ul>
-      <li alt="Inferential Statistics / Parametric Techniques / Cross tables / Chi-Squared for Independence">Chi-Squared for Independence</li>
-      <li alt="Inferential Statistics / Parametric Techniques / Cross tables / Chi-Squared for Homogeneity">Chi-Squared for Homogeneity</li>
-      <li alt="Inferential Statistics / Parametric Techniques / Cross tables / Chi-Squared Goodness of Fit">Chi-Squared Goodness of Fit</li>
-      <li alt="Inferential Statistics / Parametric Techniques / Cross tables / Fisher&#39;s Exact Test">Fisher&#39;s Exact Test</li>
+      <li><span id="c95">Inferential Statistics / Parametric Techniques / Cross tables / Chi-Squared for Independence</span> <button type="button" onclick="copy_data(c95)">copy</button></li>
+      <li><span id="c96">Inferential Statistics / Parametric Techniques / Cross tables / Chi-Squared for Homogeneity</span> <button type="button" onclick="copy_data(c96)">copy</button></li>
+      <li><span id="c97">Inferential Statistics / Parametric Techniques / Cross tables / Chi-Squared Goodness of Fit</span> <button type="button" onclick="copy_data(c97)">copy</button></li>
+      <li><span id="c98">Inferential Statistics / Parametric Techniques / Cross tables / Fisher&#39;s Exact Test</span> <button type="button" onclick="copy_data(c98)">copy</button></li>
 </ul>
-    <li alt="Inferential Statistics / Parametric Techniques / ANOVA">ANOVA</li>
+    <li><span id="c99">Inferential Statistics / Parametric Techniques / ANOVA</span> <button type="button" onclick="copy_data(c99)">copy</button></li>
 <ul>
-      <li alt="Inferential Statistics / Parametric Techniques / ANOVA / Oneway ANOVA">Oneway ANOVA</li>
-      <li alt="Inferential Statistics / Parametric Techniques / ANOVA / Twoway ANOVA">Twoway ANOVA</li>
-      <li alt="Inferential Statistics / Parametric Techniques / ANOVA / Oneway repeated measures ANOVA">Oneway repeated measures ANOVA</li>
-      <li alt="Inferential Statistics / Parametric Techniques / ANOVA / Twoway repeated measures ANOVA">Twoway repeated measures ANOVA</li>
-      <li alt="Inferential Statistics / Parametric Techniques / ANOVA / Mixed design ANOVA">Mixed design ANOVA</li>
-      <li alt="Inferential Statistics / Parametric Techniques / ANOVA / ANCOVA">ANCOVA</li>
-      <li alt="Inferential Statistics / Parametric Techniques / ANOVA / MANOVA">MANOVA</li>
-      <li alt="Inferential Statistics / Parametric Techniques / ANOVA / MANCOVA">MANCOVA</li>
-      <li alt="Inferential Statistics / Parametric Techniques / ANOVA / ANOVA F-test">ANOVA F-test</li>
-      <li alt="Inferential Statistics / Parametric Techniques / ANOVA / Post-hoc test">Post-hoc test</li>
+      <li><span id="c100">Inferential Statistics / Parametric Techniques / ANOVA / Oneway ANOVA</span> <button type="button" onclick="copy_data(c100)">copy</button></li>
+      <li><span id="c101">Inferential Statistics / Parametric Techniques / ANOVA / Twoway ANOVA</span> <button type="button" onclick="copy_data(c101)">copy</button></li>
+      <li><span id="c102">Inferential Statistics / Parametric Techniques / ANOVA / Oneway repeated measures ANOVA</span> <button type="button" onclick="copy_data(c102)">copy</button></li>
+      <li><span id="c103">Inferential Statistics / Parametric Techniques / ANOVA / Twoway repeated measures ANOVA</span> <button type="button" onclick="copy_data(c103)">copy</button></li>
+      <li><span id="c104">Inferential Statistics / Parametric Techniques / ANOVA / Mixed design ANOVA</span> <button type="button" onclick="copy_data(c104)">copy</button></li>
+      <li><span id="c105">Inferential Statistics / Parametric Techniques / ANOVA / ANCOVA</span> <button type="button" onclick="copy_data(c105)">copy</button></li>
+      <li><span id="c106">Inferential Statistics / Parametric Techniques / ANOVA / MANOVA</span> <button type="button" onclick="copy_data(c106)">copy</button></li>
+      <li><span id="c107">Inferential Statistics / Parametric Techniques / ANOVA / MANCOVA</span> <button type="button" onclick="copy_data(c107)">copy</button></li>
+      <li><span id="c108">Inferential Statistics / Parametric Techniques / ANOVA / ANOVA F-test</span> <button type="button" onclick="copy_data(c108)">copy</button></li>
+      <li><span id="c109">Inferential Statistics / Parametric Techniques / ANOVA / Post-hoc test</span> <button type="button" onclick="copy_data(c109)">copy</button></li>
 </ul>
-    <li alt="Inferential Statistics / Parametric Techniques / Variance">Variance</li>
+    <li><span id="c110">Inferential Statistics / Parametric Techniques / Variance</span> <button type="button" onclick="copy_data(c110)">copy</button></li>
 <ul>
-      <li alt="Inferential Statistics / Parametric Techniques / Variance / One variance">One variance</li>
-      <li alt="Inferential Statistics / Parametric Techniques / Variance / Two variances">Two variances</li>
+      <li><span id="c111">Inferential Statistics / Parametric Techniques / Variance / One variance</span> <button type="button" onclick="copy_data(c111)">copy</button></li>
+      <li><span id="c112">Inferential Statistics / Parametric Techniques / Variance / Two variances</span> <button type="button" onclick="copy_data(c112)">copy</button></li>
 </ul></ul>
-  <li alt="Inferential Statistics / Regression">Regression</li>
+  <li><span id="c113">Inferential Statistics / Regression</span> <button type="button" onclick="copy_data(c113)">copy</button></li>
 <ul>
-    <li alt="Inferential Statistics / Regression / Simple linear regression">Simple linear regression</li>
-    <li alt="Inferential Statistics / Regression / Equation">Equation</li>
-    <li alt="Inferential Statistics / Regression / Slope">Slope</li>
-    <li alt="Inferential Statistics / Regression / Intercept">Intercept</li>
-    <li alt="Inferential Statistics / Regression / Prediction">Prediction</li>
-    <li alt="Inferential Statistics / Regression / Residuals">Residuals</li>
-    <li alt="Inferential Statistics / Regression / Sum of squares">Sum of squares</li>
-    <li alt="Inferential Statistics / Regression / Regression F-test">Regression F-test</li>
-    <li alt="Inferential Statistics / Regression / R squared">R squared</li>
-    <li alt="Inferential Statistics / Regression / Standard error of the estimate">Standard error of the estimate</li>
-    <li alt="Inferential Statistics / Regression / Standardized coefficient">Standardized coefficient</li>
-    <li alt="Inferential Statistics / Regression / Dummies">Dummies</li>
-    <li alt="Inferential Statistics / Regression / Confidence interval">Confidence interval</li>
-    <li alt="Inferential Statistics / Regression / Prediction interval">Prediction interval</li>
-    <li alt="Inferential Statistics / Regression / Coefficient t-test">Coefficient t-test</li>
-    <li alt="Inferential Statistics / Regression / Multiple linear regression">Multiple linear regression</li>
+    <li><span id="c114">Inferential Statistics / Regression / Simple linear regression</span> <button type="button" onclick="copy_data(c114)">copy</button></li>
+    <li><span id="c115">Inferential Statistics / Regression / Equation</span> <button type="button" onclick="copy_data(c115)">copy</button></li>
+    <li><span id="c116">Inferential Statistics / Regression / Slope</span> <button type="button" onclick="copy_data(c116)">copy</button></li>
+    <li><span id="c117">Inferential Statistics / Regression / Intercept</span> <button type="button" onclick="copy_data(c117)">copy</button></li>
+    <li><span id="c118">Inferential Statistics / Regression / Prediction</span> <button type="button" onclick="copy_data(c118)">copy</button></li>
+    <li><span id="c119">Inferential Statistics / Regression / Residuals</span> <button type="button" onclick="copy_data(c119)">copy</button></li>
+    <li><span id="c120">Inferential Statistics / Regression / Sum of squares</span> <button type="button" onclick="copy_data(c120)">copy</button></li>
+    <li><span id="c121">Inferential Statistics / Regression / Regression F-test</span> <button type="button" onclick="copy_data(c121)">copy</button></li>
+    <li><span id="c122">Inferential Statistics / Regression / R squared</span> <button type="button" onclick="copy_data(c122)">copy</button></li>
+    <li><span id="c123">Inferential Statistics / Regression / Standard error of the estimate</span> <button type="button" onclick="copy_data(c123)">copy</button></li>
+    <li><span id="c124">Inferential Statistics / Regression / Standardized coefficient</span> <button type="button" onclick="copy_data(c124)">copy</button></li>
+    <li><span id="c125">Inferential Statistics / Regression / Dummies</span> <button type="button" onclick="copy_data(c125)">copy</button></li>
+    <li><span id="c126">Inferential Statistics / Regression / Confidence interval</span> <button type="button" onclick="copy_data(c126)">copy</button></li>
+    <li><span id="c127">Inferential Statistics / Regression / Prediction interval</span> <button type="button" onclick="copy_data(c127)">copy</button></li>
+    <li><span id="c128">Inferential Statistics / Regression / Coefficient t-test</span> <button type="button" onclick="copy_data(c128)">copy</button></li>
+    <li><span id="c129">Inferential Statistics / Regression / Multiple linear regression</span> <button type="button" onclick="copy_data(c129)">copy</button></li>
 <ul>
-      <li alt="Inferential Statistics / Regression / Multiple linear regression / F-test for comparing (nested) models">F-test for comparing (nested) models</li>
-      <li alt="Inferential Statistics / Regression / Multiple linear regression / R squared change">R squared change</li>
-      <li alt="Inferential Statistics / Regression / Multiple linear regression / Moderation">Moderation</li>
-      <li alt="Inferential Statistics / Regression / Multiple linear regression / Mediation">Mediation</li>
-      <li alt="Inferential Statistics / Regression / Multiple linear regression / Suppression">Suppression</li>
+      <li><span id="c130">Inferential Statistics / Regression / Multiple linear regression / F-test for comparing (nested) models</span> <button type="button" onclick="copy_data(c130)">copy</button></li>
+      <li><span id="c131">Inferential Statistics / Regression / Multiple linear regression / R squared change</span> <button type="button" onclick="copy_data(c131)">copy</button></li>
+      <li><span id="c132">Inferential Statistics / Regression / Multiple linear regression / Moderation</span> <button type="button" onclick="copy_data(c132)">copy</button></li>
+      <li><span id="c133">Inferential Statistics / Regression / Multiple linear regression / Mediation</span> <button type="button" onclick="copy_data(c133)">copy</button></li>
+      <li><span id="c134">Inferential Statistics / Regression / Multiple linear regression / Suppression</span> <button type="button" onclick="copy_data(c134)">copy</button></li>
 </ul>
-    <li alt="Inferential Statistics / Regression / Principal axis regression">Principal axis regression</li>
-    <li alt="Inferential Statistics / Regression / Logistic regression">Logistic regression</li>
+    <li><span id="c135">Inferential Statistics / Regression / Principal axis regression</span> <button type="button" onclick="copy_data(c135)">copy</button></li>
+    <li><span id="c136">Inferential Statistics / Regression / Logistic regression</span> <button type="button" onclick="copy_data(c136)">copy</button></li>
 <ul>
-      <li alt="Inferential Statistics / Regression / Logistic regression / Odds">Odds</li>
-      <li alt="Inferential Statistics / Regression / Logistic regression / Odds ratio">Odds ratio</li>
+      <li><span id="c137">Inferential Statistics / Regression / Logistic regression / Odds</span> <button type="button" onclick="copy_data(c137)">copy</button></li>
+      <li><span id="c138">Inferential Statistics / Regression / Logistic regression / Odds ratio</span> <button type="button" onclick="copy_data(c138)">copy</button></li>
 </ul>
-    <li alt="Inferential Statistics / Regression / Probit regression">Probit regression</li>
-    <li alt="Inferential Statistics / Regression / Multinomial logistic regression">Multinomial logistic regression</li>
+    <li><span id="c139">Inferential Statistics / Regression / Probit regression</span> <button type="button" onclick="copy_data(c139)">copy</button></li>
+    <li><span id="c140">Inferential Statistics / Regression / Multinomial logistic regression</span> <button type="button" onclick="copy_data(c140)">copy</button></li>
 </ul>
-  <li alt="Inferential Statistics / Non-parametric Techniques">Non-parametric Techniques</li>
+  <li><span id="c141">Inferential Statistics / Non-parametric Techniques</span> <button type="button" onclick="copy_data(c141)">copy</button></li>
 <ul>
-    <li alt="Inferential Statistics / Non-parametric Techniques / Sign test">Sign test</li>
-    <li alt="Inferential Statistics / Non-parametric Techniques / Rank Sum test">Rank Sum test</li>
-    <li alt="Inferential Statistics / Non-parametric Techniques / Signed Rank test">Signed Rank test</li>
-    <li alt="Inferential Statistics / Non-parametric Techniques / Kruskal-Wallis test">Kruskal-Wallis test</li>
-    <li alt="Inferential Statistics / Non-parametric Techniques / Friedman&#39;s test">Friedman&#39;s test</li>
-    <li alt="Inferential Statistics / Non-parametric Techniques / Permutation test">Permutation test</li>
+    <li><span id="c142">Inferential Statistics / Non-parametric Techniques / Sign test</span> <button type="button" onclick="copy_data(c142)">copy</button></li>
+    <li><span id="c143">Inferential Statistics / Non-parametric Techniques / Rank Sum test</span> <button type="button" onclick="copy_data(c143)">copy</button></li>
+    <li><span id="c144">Inferential Statistics / Non-parametric Techniques / Signed Rank test</span> <button type="button" onclick="copy_data(c144)">copy</button></li>
+    <li><span id="c145">Inferential Statistics / Non-parametric Techniques / Kruskal-Wallis test</span> <button type="button" onclick="copy_data(c145)">copy</button></li>
+    <li><span id="c146">Inferential Statistics / Non-parametric Techniques / Friedman&#39;s test</span> <button type="button" onclick="copy_data(c146)">copy</button></li>
+    <li><span id="c147">Inferential Statistics / Non-parametric Techniques / Permutation test</span> <button type="button" onclick="copy_data(c147)">copy</button></li>
 </ul>
-  <li alt="Inferential Statistics / Bootstrap">Bootstrap</li>
-  <li alt="Inferential Statistics / Bayesian Statistics">Bayesian Statistics</li>
+  <li><span id="c148">Inferential Statistics / Bootstrap</span> <button type="button" onclick="copy_data(c148)">copy</button></li>
+  <li><span id="c149">Inferential Statistics / Bayesian Statistics</span> <button type="button" onclick="copy_data(c149)">copy</button></li>
 <ul>
-    <li alt="Inferential Statistics / Bayesian Statistics / Prior">Prior</li>
-    <li alt="Inferential Statistics / Bayesian Statistics / Likelihood">Likelihood</li>
-    <li alt="Inferential Statistics / Bayesian Statistics / Posterior">Posterior</li>
-    <li alt="Inferential Statistics / Bayesian Statistics / Credible intervals">Credible intervals</li>
-    <li alt="Inferential Statistics / Bayesian Statistics / Hypothesis test">Hypothesis test</li>
-    <li alt="Inferential Statistics / Bayesian Statistics / Bayes factor">Bayes factor</li>
-    <li alt="Inferential Statistics / Bayesian Statistics / Parameter estimation">Parameter estimation</li>
-    <li alt="Inferential Statistics / Bayesian Statistics / Informative hypothesis testing">Informative hypothesis testing</li>
+    <li><span id="c150">Inferential Statistics / Bayesian Statistics / Prior</span> <button type="button" onclick="copy_data(c150)">copy</button></li>
+    <li><span id="c151">Inferential Statistics / Bayesian Statistics / Likelihood</span> <button type="button" onclick="copy_data(c151)">copy</button></li>
+    <li><span id="c152">Inferential Statistics / Bayesian Statistics / Posterior</span> <button type="button" onclick="copy_data(c152)">copy</button></li>
+    <li><span id="c153">Inferential Statistics / Bayesian Statistics / Credible intervals</span> <button type="button" onclick="copy_data(c153)">copy</button></li>
+    <li><span id="c154">Inferential Statistics / Bayesian Statistics / Hypothesis test</span> <button type="button" onclick="copy_data(c154)">copy</button></li>
+    <li><span id="c155">Inferential Statistics / Bayesian Statistics / Bayes factor</span> <button type="button" onclick="copy_data(c155)">copy</button></li>
+    <li><span id="c156">Inferential Statistics / Bayesian Statistics / Parameter estimation</span> <button type="button" onclick="copy_data(c156)">copy</button></li>
+    <li><span id="c157">Inferential Statistics / Bayesian Statistics / Informative hypothesis testing</span> <button type="button" onclick="copy_data(c157)">copy</button></li>
 </ul>
-  <li alt="Inferential Statistics / Time Series">Time Series</li>
+  <li><span id="c158">Inferential Statistics / Time Series</span> <button type="button" onclick="copy_data(c158)">copy</button></li>
 <ul>
-    <li alt="Inferential Statistics / Time Series / Descriptive methods">Descriptive methods</li>
-    <li alt="Inferential Statistics / Time Series / Autocorrelation">Autocorrelation</li>
-    <li alt="Inferential Statistics / Time Series / Runs test">Runs test</li>
-    <li alt="Inferential Statistics / Time Series / Seasonal variation">Seasonal variation</li>
-    <li alt="Inferential Statistics / Time Series / Arima models">Arima models</li>
-    <li alt="Inferential Statistics / Time Series / Forecasting">Forecasting</li>
-    <li alt="Inferential Statistics / Time Series / Frequency domain">Frequency domain</li>
+    <li><span id="c159">Inferential Statistics / Time Series / Descriptive methods</span> <button type="button" onclick="copy_data(c159)">copy</button></li>
+    <li><span id="c160">Inferential Statistics / Time Series / Autocorrelation</span> <button type="button" onclick="copy_data(c160)">copy</button></li>
+    <li><span id="c161">Inferential Statistics / Time Series / Runs test</span> <button type="button" onclick="copy_data(c161)">copy</button></li>
+    <li><span id="c162">Inferential Statistics / Time Series / Seasonal variation</span> <button type="button" onclick="copy_data(c162)">copy</button></li>
+    <li><span id="c163">Inferential Statistics / Time Series / Arima models</span> <button type="button" onclick="copy_data(c163)">copy</button></li>
+    <li><span id="c164">Inferential Statistics / Time Series / Forecasting</span> <button type="button" onclick="copy_data(c164)">copy</button></li>
+    <li><span id="c165">Inferential Statistics / Time Series / Frequency domain</span> <button type="button" onclick="copy_data(c165)">copy</button></li>
 </ul>
-  <li alt="Inferential Statistics / Multilevel Analysis">Multilevel Analysis</li>
+  <li><span id="c166">Inferential Statistics / Multilevel Analysis</span> <button type="button" onclick="copy_data(c166)">copy</button></li>
 </ul>
-<li alt="Probability">Probability</li>
+<li><span id="c167">Probability</span> <button type="button" onclick="copy_data(c167)">copy</button></li>
 <ul>
-  <li alt="Probability / Elementary Probability">Elementary Probability</li>
+  <li><span id="c168">Probability / Elementary Probability</span> <button type="button" onclick="copy_data(c168)">copy</button></li>
 <ul>
-    <li alt="Probability / Elementary Probability / Sample Space">Sample Space</li>
-    <li alt="Probability / Elementary Probability / Events">Events</li>
-    <li alt="Probability / Elementary Probability / General Rules">General Rules</li>
+    <li><span id="c169">Probability / Elementary Probability / Sample Space</span> <button type="button" onclick="copy_data(c169)">copy</button></li>
+    <li><span id="c170">Probability / Elementary Probability / Events</span> <button type="button" onclick="copy_data(c170)">copy</button></li>
+    <li><span id="c171">Probability / Elementary Probability / General Rules</span> <button type="button" onclick="copy_data(c171)">copy</button></li>
 <ul>
-      <li alt="Probability / Elementary Probability / General Rules / Intersection">Intersection</li>
-      <li alt="Probability / Elementary Probability / General Rules / Union">Union</li>
-      <li alt="Probability / Elementary Probability / General Rules / Addition rule">Addition rule</li>
-      <li alt="Probability / Elementary Probability / General Rules / Multiplication rule">Multiplication rule</li>
-      <li alt="Probability / Elementary Probability / General Rules / Independent events">Independent events</li>
+      <li><span id="c172">Probability / Elementary Probability / General Rules / Intersection</span> <button type="button" onclick="copy_data(c172)">copy</button></li>
+      <li><span id="c173">Probability / Elementary Probability / General Rules / Union</span> <button type="button" onclick="copy_data(c173)">copy</button></li>
+      <li><span id="c174">Probability / Elementary Probability / General Rules / Addition rule</span> <button type="button" onclick="copy_data(c174)">copy</button></li>
+      <li><span id="c175">Probability / Elementary Probability / General Rules / Multiplication rule</span> <button type="button" onclick="copy_data(c175)">copy</button></li>
+      <li><span id="c176">Probability / Elementary Probability / General Rules / Independent events</span> <button type="button" onclick="copy_data(c176)">copy</button></li>
 </ul>
-    <li alt="Probability / Elementary Probability / Combinations">Combinations</li>
-    <li alt="Probability / Elementary Probability / Permutations">Permutations</li>
-    <li alt="Probability / Elementary Probability / Conditional probability">Conditional probability</li>
-    <li alt="Probability / Elementary Probability / Random variables">Random variables</li>
+    <li><span id="c177">Probability / Elementary Probability / Combinations</span> <button type="button" onclick="copy_data(c177)">copy</button></li>
+    <li><span id="c178">Probability / Elementary Probability / Permutations</span> <button type="button" onclick="copy_data(c178)">copy</button></li>
+    <li><span id="c179">Probability / Elementary Probability / Conditional probability</span> <button type="button" onclick="copy_data(c179)">copy</button></li>
+    <li><span id="c180">Probability / Elementary Probability / Random variables</span> <button type="button" onclick="copy_data(c180)">copy</button></li>
 <ul>
-      <li alt="Probability / Elementary Probability / Random variables / Expected value">Expected value</li>
-      <li alt="Probability / Elementary Probability / Random variables / Variance">Variance</li>
-      <li alt="Probability / Elementary Probability / Random variables / Rules for expected values">Rules for expected values</li>
-      <li alt="Probability / Elementary Probability / Random variables / Random sample">Random sample</li>
+      <li><span id="c181">Probability / Elementary Probability / Random variables / Expected value</span> <button type="button" onclick="copy_data(c181)">copy</button></li>
+      <li><span id="c182">Probability / Elementary Probability / Random variables / Variance</span> <button type="button" onclick="copy_data(c182)">copy</button></li>
+      <li><span id="c183">Probability / Elementary Probability / Random variables / Rules for expected values</span> <button type="button" onclick="copy_data(c183)">copy</button></li>
+      <li><span id="c184">Probability / Elementary Probability / Random variables / Random sample</span> <button type="button" onclick="copy_data(c184)">copy</button></li>
 </ul></ul></ul>
-<li alt="Distributions">Distributions</li>
+<li><span id="c185">Distributions</span> <button type="button" onclick="copy_data(c185)">copy</button></li>
 <ul>
-  <li alt="Distributions / Discrete">Discrete</li>
+  <li><span id="c186">Distributions / Discrete</span> <button type="button" onclick="copy_data(c186)">copy</button></li>
 <ul>
-    <li alt="Distributions / Discrete / Binomial">Binomial</li>
-    <li alt="Distributions / Discrete / Normal approximation to Binomial">Normal approximation to Binomial</li>
-    <li alt="Distributions / Discrete / Bernoulli">Bernoulli</li>
-    <li alt="Distributions / Discrete / Geometric">Geometric</li>
-    <li alt="Distributions / Discrete / Negative Binomial">Negative Binomial</li>
-    <li alt="Distributions / Discrete / Poisson">Poisson</li>
-    <li alt="Distributions / Discrete / Hypergeometric">Hypergeometric</li>
-    <li alt="Distributions / Discrete / Multinominal">Multinominal</li>
+    <li><span id="c187">Distributions / Discrete / Binomial</span> <button type="button" onclick="copy_data(c187)">copy</button></li>
+    <li><span id="c188">Distributions / Discrete / Normal approximation to Binomial</span> <button type="button" onclick="copy_data(c188)">copy</button></li>
+    <li><span id="c189">Distributions / Discrete / Bernoulli</span> <button type="button" onclick="copy_data(c189)">copy</button></li>
+    <li><span id="c190">Distributions / Discrete / Geometric</span> <button type="button" onclick="copy_data(c190)">copy</button></li>
+    <li><span id="c191">Distributions / Discrete / Negative Binomial</span> <button type="button" onclick="copy_data(c191)">copy</button></li>
+    <li><span id="c192">Distributions / Discrete / Poisson</span> <button type="button" onclick="copy_data(c192)">copy</button></li>
+    <li><span id="c193">Distributions / Discrete / Hypergeometric</span> <button type="button" onclick="copy_data(c193)">copy</button></li>
+    <li><span id="c194">Distributions / Discrete / Multinominal</span> <button type="button" onclick="copy_data(c194)">copy</button></li>
 </ul>
-  <li alt="Distributions / Continuous">Continuous</li>
+  <li><span id="c195">Distributions / Continuous</span> <button type="button" onclick="copy_data(c195)">copy</button></li>
 <ul>
-    <li alt="Distributions / Continuous / Normal">Normal</li>
-    <li alt="Distributions / Continuous / Uniform">Uniform</li>
-    <li alt="Distributions / Continuous / Exponential">Exponential</li>
-    <li alt="Distributions / Continuous / Gamma">Gamma</li>
-    <li alt="Distributions / Continuous / t-distribution">t-distribution</li>
-    <li alt="Distributions / Continuous / F-distribution">F-distribution</li>
-    <li alt="Distributions / Continuous / Chi-squared">Chi-squared</li>
-    <li alt="Distributions / Continuous / Beta">Beta</li>
+    <li><span id="c196">Distributions / Continuous / Normal</span> <button type="button" onclick="copy_data(c196)">copy</button></li>
+    <li><span id="c197">Distributions / Continuous / Uniform</span> <button type="button" onclick="copy_data(c197)">copy</button></li>
+    <li><span id="c198">Distributions / Continuous / Exponential</span> <button type="button" onclick="copy_data(c198)">copy</button></li>
+    <li><span id="c199">Distributions / Continuous / Gamma</span> <button type="button" onclick="copy_data(c199)">copy</button></li>
+    <li><span id="c200">Distributions / Continuous / t-distribution</span> <button type="button" onclick="copy_data(c200)">copy</button></li>
+    <li><span id="c201">Distributions / Continuous / F-distribution</span> <button type="button" onclick="copy_data(c201)">copy</button></li>
+    <li><span id="c202">Distributions / Continuous / Chi-squared</span> <button type="button" onclick="copy_data(c202)">copy</button></li>
+    <li><span id="c203">Distributions / Continuous / Beta</span> <button type="button" onclick="copy_data(c203)">copy</button></li>
 </ul>
-  <li alt="Distributions / Limit Theorems">Limit Theorems</li>
+  <li><span id="c204">Distributions / Limit Theorems</span> <button type="button" onclick="copy_data(c204)">copy</button></li>
 <ul>
-    <li alt="Distributions / Limit Theorems / Central Limit Theorem">Central Limit Theorem</li>
-    <li alt="Distributions / Limit Theorems / Law of Large Numbers">Law of Large Numbers</li>
+    <li><span id="c205">Distributions / Limit Theorems / Central Limit Theorem</span> <button type="button" onclick="copy_data(c205)">copy</button></li>
+    <li><span id="c206">Distributions / Limit Theorems / Law of Large Numbers</span> <button type="button" onclick="copy_data(c206)">copy</button></li>
 </ul></ul>
-<li alt="Assumptions">Assumptions</li>
+<li><span id="c207">Assumptions</span> <button type="button" onclick="copy_data(c207)">copy</button></li>
 <ul>
-  <li alt="Assumptions / Homogeneity of variance">Homogeneity of variance</li>
+  <li><span id="c208">Assumptions / Homogeneity of variance</span> <button type="button" onclick="copy_data(c208)">copy</button></li>
 <ul>
-    <li alt="Assumptions / Homogeneity of variance / Levene&#39;s test">Levene&#39;s test</li>
-    <li alt="Assumptions / Homogeneity of variance / Ratio of sample size">Ratio of sample size</li>
-    <li alt="Assumptions / Homogeneity of variance / Ratio of variance">Ratio of variance</li>
+    <li><span id="c209">Assumptions / Homogeneity of variance / Levene&#39;s test</span> <button type="button" onclick="copy_data(c209)">copy</button></li>
+    <li><span id="c210">Assumptions / Homogeneity of variance / Ratio of sample size</span> <button type="button" onclick="copy_data(c210)">copy</button></li>
+    <li><span id="c211">Assumptions / Homogeneity of variance / Ratio of variance</span> <button type="button" onclick="copy_data(c211)">copy</button></li>
 </ul>
-  <li alt="Assumptions / Sphericity">Sphericity</li>
+  <li><span id="c212">Assumptions / Sphericity</span> <button type="button" onclick="copy_data(c212)">copy</button></li>
 <ul>
-    <li alt="Assumptions / Sphericity / Mauchly&#39;s test">Mauchly&#39;s test</li>
-    <li alt="Assumptions / Sphericity / Epsilon">Epsilon</li>
+    <li><span id="c213">Assumptions / Sphericity / Mauchly&#39;s test</span> <button type="button" onclick="copy_data(c213)">copy</button></li>
+    <li><span id="c214">Assumptions / Sphericity / Epsilon</span> <button type="button" onclick="copy_data(c214)">copy</button></li>
 </ul>
-  <li alt="Assumptions / Normality">Normality</li>
+  <li><span id="c215">Assumptions / Normality</span> <button type="button" onclick="copy_data(c215)">copy</button></li>
 <ul>
-    <li alt="Assumptions / Normality / Shapiro-Wilks">Shapiro-Wilks</li>
-    <li alt="Assumptions / Normality / Kolmogorov-Smirnov">Kolmogorov-Smirnov</li>
-    <li alt="Assumptions / Normality / Q-Q plot">Q-Q plot</li>
+    <li><span id="c216">Assumptions / Normality / Shapiro-Wilks</span> <button type="button" onclick="copy_data(c216)">copy</button></li>
+    <li><span id="c217">Assumptions / Normality / Kolmogorov-Smirnov</span> <button type="button" onclick="copy_data(c217)">copy</button></li>
+    <li><span id="c218">Assumptions / Normality / Q-Q plot</span> <button type="button" onclick="copy_data(c218)">copy</button></li>
 </ul>
-  <li alt="Assumptions / Linearity">Linearity</li>
-  <li alt="Assumptions / Homoscedasticity">Homoscedasticity</li>
+  <li><span id="c219">Assumptions / Linearity</span> <button type="button" onclick="copy_data(c219)">copy</button></li>
+  <li><span id="c220">Assumptions / Homoscedasticity</span> <button type="button" onclick="copy_data(c220)">copy</button></li>
 <ul>
-    <li alt="Assumptions / Homoscedasticity / Residual plot">Residual plot</li>
+    <li><span id="c221">Assumptions / Homoscedasticity / Residual plot</span> <button type="button" onclick="copy_data(c221)">copy</button></li>
 </ul>
-  <li alt="Assumptions / Multicolinearity">Multicolinearity</li>
+  <li><span id="c222">Assumptions / Multicolinearity</span> <button type="button" onclick="copy_data(c222)">copy</button></li>
 <ul>
-    <li alt="Assumptions / Multicolinearity / VIF">VIF</li>
-    <li alt="Assumptions / Multicolinearity / Tolerance">Tolerance</li>
+    <li><span id="c223">Assumptions / Multicolinearity / VIF</span> <button type="button" onclick="copy_data(c223)">copy</button></li>
+    <li><span id="c224">Assumptions / Multicolinearity / Tolerance</span> <button type="button" onclick="copy_data(c224)">copy</button></li>
 </ul></ul>
-<li alt="Factor analysis">Factor analysis</li>
+<li><span id="c225">Factor analysis</span> <button type="button" onclick="copy_data(c225)">copy</button></li>
 <ul>
-  <li alt="Factor analysis / Principle component analysis">Principle component analysis</li>
-  <li alt="Factor analysis / Exploratory factor analysis">Exploratory factor analysis</li>
-  <li alt="Factor analysis / Confirmatory factor analysis">Confirmatory factor analysis</li>
-  <li alt="Factor analysis / Rotations">Rotations</li>
-  <li alt="Factor analysis / Eigenvalues">Eigenvalues</li>
-  <li alt="Factor analysis / Factor loadings">Factor loadings</li>
-  <li alt="Factor analysis / Explained variance">Explained variance</li>
-  <li alt="Factor analysis / Compontent correlation matrix">Compontent correlation matrix</li>
-  <li alt="Factor analysis / Scree plot">Scree plot</li>
-  <li alt="Factor analysis / Pattern matrix">Pattern matrix</li>
-  <li alt="Factor analysis / Structure matrix">Structure matrix</li>
-  <li alt="Factor analysis / Factor correlation matrix">Factor correlation matrix</li>
-  <li alt="Factor analysis / Communalities">Communalities</li>
-  <li alt="Factor analysis / Factor scores">Factor scores</li>
+  <li><span id="c226">Factor analysis / Principle component analysis</span> <button type="button" onclick="copy_data(c226)">copy</button></li>
+  <li><span id="c227">Factor analysis / Exploratory factor analysis</span> <button type="button" onclick="copy_data(c227)">copy</button></li>
+  <li><span id="c228">Factor analysis / Confirmatory factor analysis</span> <button type="button" onclick="copy_data(c228)">copy</button></li>
+  <li><span id="c229">Factor analysis / Rotations</span> <button type="button" onclick="copy_data(c229)">copy</button></li>
+  <li><span id="c230">Factor analysis / Eigenvalues</span> <button type="button" onclick="copy_data(c230)">copy</button></li>
+  <li><span id="c231">Factor analysis / Factor loadings</span> <button type="button" onclick="copy_data(c231)">copy</button></li>
+  <li><span id="c232">Factor analysis / Explained variance</span> <button type="button" onclick="copy_data(c232)">copy</button></li>
+  <li><span id="c233">Factor analysis / Compontent correlation matrix</span> <button type="button" onclick="copy_data(c233)">copy</button></li>
+  <li><span id="c234">Factor analysis / Scree plot</span> <button type="button" onclick="copy_data(c234)">copy</button></li>
+  <li><span id="c235">Factor analysis / Pattern matrix</span> <button type="button" onclick="copy_data(c235)">copy</button></li>
+  <li><span id="c236">Factor analysis / Structure matrix</span> <button type="button" onclick="copy_data(c236)">copy</button></li>
+  <li><span id="c237">Factor analysis / Factor correlation matrix</span> <button type="button" onclick="copy_data(c237)">copy</button></li>
+  <li><span id="c238">Factor analysis / Communalities</span> <button type="button" onclick="copy_data(c238)">copy</button></li>
+  <li><span id="c239">Factor analysis / Factor scores</span> <button type="button" onclick="copy_data(c239)">copy</button></li>
 </ul>
-<li alt="Reliability">Reliability</li>
+<li><span id="c240">Reliability</span> <button type="button" onclick="copy_data(c240)">copy</button></li>
 <ul>
-  <li alt="Reliability / Analysis">Analysis</li>
+  <li><span id="c241">Reliability / Analysis</span> <button type="button" onclick="copy_data(c241)">copy</button></li>
 <ul>
-    <li alt="Reliability / Analysis / Cronbach&#39;s alpha">Cronbach&#39;s alpha</li>
-    <li alt="Reliability / Analysis / Split half">Split half</li>
-    <li alt="Reliability / Analysis / Test-retest">Test-retest</li>
-    <li alt="Reliability / Analysis / Parallel forms">Parallel forms</li>
+    <li><span id="c242">Reliability / Analysis / Cronbach&#39;s alpha</span> <button type="button" onclick="copy_data(c242)">copy</button></li>
+    <li><span id="c243">Reliability / Analysis / Split half</span> <button type="button" onclick="copy_data(c243)">copy</button></li>
+    <li><span id="c244">Reliability / Analysis / Test-retest</span> <button type="button" onclick="copy_data(c244)">copy</button></li>
+    <li><span id="c245">Reliability / Analysis / Parallel forms</span> <button type="button" onclick="copy_data(c245)">copy</button></li>
 </ul>
-  <li alt="Reliability / Descriptives">Descriptives</li>
+  <li><span id="c246">Reliability / Descriptives</span> <button type="button" onclick="copy_data(c246)">copy</button></li>
 <ul>
-    <li alt="Reliability / Descriptives / RIT">RIT</li>
-    <li alt="Reliability / Descriptives / RIR">RIR</li>
-    <li alt="Reliability / Descriptives / proportion correct">proportion correct</li>
+    <li><span id="c247">Reliability / Descriptives / RIT</span> <button type="button" onclick="copy_data(c247)">copy</button></li>
+    <li><span id="c248">Reliability / Descriptives / RIR</span> <button type="button" onclick="copy_data(c248)">copy</button></li>
+    <li><span id="c249">Reliability / Descriptives / proportion correct</span> <button type="button" onclick="copy_data(c249)">copy</button></li>
 </ul>
 </div>
 <div id="meta-information" class="section level3">
@@ -4438,6 +4451,7 @@ div.tocify {
 <li>Language: English, Dutch</li>
 <li>Level: Statistical Literacy, Statistical Reasoning, Statistical Thinking</li>
 </ul>
+<p>You can use more than one tag per category.</p>
 <pre><code>Meta-information
 ================
 exextra[Type]: Calculation, Data manipulation
@@ -4446,8 +4460,8 @@ exextra[Language]: English
 exextra[Level]: Statistical Literacy</code></pre>
 <pre><code>## New names:
 ## * `` -&gt; ...2</code></pre>
-<div id="htmlwidget-cf2082feea5f89b7ac27" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-cf2082feea5f89b7ac27">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9"],["Calculation","Case","Conceptual","Creating graphs","Data manipulation","Interpretating graph","Interpretating output","Performing analysis","Test choice"],["A question containing simple (hand/calculator) calculations","Questions that belong to a longer description of a research study. Oftentimes multiple questions are asked about the same case/description.","Basic question asking about simple facts.","The student is asked to create a graph using data supplied with the question (either by hand or using a program).","The student is asked to combine data, screen data, create new variables in a dataset, or calculate descriptive statistics using the data supplied with the question.","The graph is supplied with the question. The student is asked to look at the graph and describe what is going on, draw conclusions based on the graph, etc.","The output is either supplied with the question or the student has run an analysis to create the output (combine with \"Performing analysis\"). The student is asked to look at the output and report results/draw conclusions based on it.","The student is asked to conduct an analysis using a statistical program (combine with program type).","The student is presented with a description of research/study and is aksed to choose which hypotheses test should be used."],["M1 = 10, M2 = 24, s_pooled = 1.23. What is the value of Cohen's d?",null,"Which of the following properties is not a condition for establishing a causal relationship?\r\na. Alternative explanations for the relationship between cause and effect can be excluded.\r\nb. The data shall be collected with a randomized experiment.\r\nc. There must be a relationship between the cause and the effect.\r\nd. The cause must precede the effect in time.",null,null,null,null,null,"A researcher randomly assigns 100 students to a control group and an experimental group. All students take a math test. Half of the students in each group take the test on paper and half of the students take the test on a computer. The researcher determines the number of correctly answered questions for each student. \r\nWith which technique should the researcher analyze his data?\r\na. ANOVA\r\nb. Cross-table analysis\r\nc. Two-way ANOVA\r\nd. ANCOVA\r\n"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Type of question<\/th>\n      <th>Short explanation<\/th>\n      <th>Example<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-888a91962f310ff574b4" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-888a91962f310ff574b4">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9"],["Calculation","Case","Conceptual","Creating graphs","Data manipulation","Interpretating graph","Interpretating output","Performing analysis","Test choice"],["A question containing simple (hand/calculator) calculations","Questions that belong to a longer description of a research study. Oftentimes multiple questions are asked about the same case/description.","Basic question asking about simple facts.","The student is asked to create a graph using data supplied with the question (either by hand or using a program).","The student is asked to combine data, screen data, create new variables in a dataset, or calculate descriptive statistics using the data supplied with the question.","The graph is supplied with the question. The student is asked to look at the graph and describe what is going on, draw conclusions based on the graph, etc.","The output is either supplied with the question or the student has run an analysis to create the output (combine with \"Performing analysis\"). The student is asked to look at the output and report results/draw conclusions based on it.","The student is asked to conduct an analysis using a statistical program (combine with program type).","The student is presented with a description of research/study and is aksed to choose which hypotheses test should be used."],["M1 = 10, M2 = 24, s_pooled = 1.23. What is the value of Cohen's d?",null,"Which of the following properties is not a condition for establishing a causal relationship?\r\na. Alternative explanations for the relationship between cause and effect can be excluded.\r\nb. The data shall be collected with a randomized experiment.\r\nc. There must be a relationship between the cause and the effect.\r\nd. The cause must precede the effect in time.",null,null,null,null,null,"A researcher randomly assigns 100 students to a control group and an experimental group. All students take a math test. Half of the students in each group take the test on paper and half of the students take the test on a computer. The researcher determines the number of correctly answered questions for each student. \r\nWith which technique should the researcher analyze his data?\r\na. ANOVA\r\nb. Cross-table analysis\r\nc. Two-way ANOVA\r\nd. ANCOVA\r\n"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Type of question<\/th>\n      <th>Short explanation<\/th>\n      <th>Example<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div id="sharestats-project" class="section level2">
