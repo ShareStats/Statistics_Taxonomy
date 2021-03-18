@@ -2,14 +2,11 @@
 title: "ShareStats Statistics Taxonomy"
 output:
   html_document:
+    css: list.css
     toc: true
     toc_float: true
     toc_depth: 2
 ---
-
-```{r setup, include=FALSE}
-library(flexdashboard)
-```
 
 <script src="copyText.js"></script>
 

@@ -52,10 +52,10 @@ for(row in 1:n.cols) {
       if(row > 1 && level.vector[row] - level.vector[row - 1] == -3) cat("</ul></ul></ul>", file = htmlList, sep = "\n")
  
       # Add list elements per level
-      if(level == 1) cat(paste0('<li><span id="c',row,'">',level1,'</span> <button type="button" onclick="copy_data(c',row,')">copy</button></li>'), file = htmlList, sep = "\n")
-      if(level == 2) cat(paste0('  <li><span id="c',row,'">',level1,' / ',level2,'</span> <button type="button" onclick="copy_data(c',row,')">copy</button></li>'), file = htmlList, sep = "\n")
-      if(level == 3) cat(paste0('    <li><span id="c',row,'">',level1,' / ',level2,' / ',level3,'</span> <button type="button" onclick="copy_data(c',row,')">copy</button></li>'), file = htmlList, sep = "\n")
-      if(level == 4) cat(paste0('      <li><span id="c',row,'">',level1,' / ',level2,' / ',level3,' / ',level4,'</span> <button type="button" onclick="copy_data(c',row,')">copy</button></li>'), file = htmlList, sep = "\n")
+      if(level == 1) cat(paste0('<li><button type="button" onclick="copy_data(c',row,')">&#128203</button> <span id="c',row,'">',level1,'</span></li>'), file = htmlList, sep = "\n")
+      if(level == 2) cat(paste0('  <li><button type="button" onclick="copy_data(c',row,')">&#128203</button> <span id="c',row,'">',level1,' / ',level2,'</span></li>'), file = htmlList, sep = "\n")
+      if(level == 3) cat(paste0('    <li><button type="button" onclick="copy_data(c',row,')">&#128203</button> <span id="c',row,'">',level1,' / ',level2,' / ',level3,'</span></li>'), file = htmlList, sep = "\n")
+      if(level == 4) cat(paste0('      <li><button type="button" onclick="copy_data(c',row,')">&#128203</button> <span id="c',row,'">',level1,' / ',level2,' / ',level3,' / ',level4,'</span></li>'), file = htmlList, sep = "\n")
 
     }
   }

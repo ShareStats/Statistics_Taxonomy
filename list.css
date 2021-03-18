@@ -1,0 +1,18 @@
+/* Main Level */
+ul{
+  margin-left:0px;
+  padding-left: 0px;
+  list-style: none;
+}
+
+/* Second Level */
+ul ul{
+  margin-left:10px;
+  padding-left: 25px;
+}
+
+/* Third Level */
+ul ul ul{
+  margin-left:10px;
+  padding-left: 25px;
+}
