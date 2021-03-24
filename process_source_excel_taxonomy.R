@@ -53,9 +53,9 @@ for(row in 1:n.cols) {
  
       # Add list elements per level
       if(level == 1) cat(paste0('<li><span class="tag" onclick="copy_data(c',row,')" id="c',row,'">',level1,'</span></li>'), file = htmlList, sep = "\n")
-      if(level == 2) cat(paste0('  <li><span class="tag" onclick="copy_data(c',row,')" id="c',row,'">',level1,' / ',level2,'</span></li>'), file = htmlList, sep = "\n")
-      if(level == 3) cat(paste0('    <li><span class="tag" onclick="copy_data(c',row,')" id="c',row,'">',level1,' / ',level2,' / ',level3,'</span></li>'), file = htmlList, sep = "\n")
-      if(level == 4) cat(paste0('      <li><span class="tag" onclick="copy_data(c',row,')" id="c',row,'">',level1,' / ',level2,' / ',level3,' / ',level4,'</span></li>'), file = htmlList, sep = "\n")
+      if(level == 2) cat(paste0('  <li><span class="tag" onclick="copy_data(c',row,')" id="c',row,'">',level1,'/',level2,'</span></li>'), file = htmlList, sep = "\n")
+      if(level == 3) cat(paste0('    <li><span class="tag" onclick="copy_data(c',row,')" id="c',row,'">',level1,'/',level2,'/',level3,'</span></li>'), file = htmlList, sep = "\n")
+      if(level == 4) cat(paste0('      <li><span class="tag" onclick="copy_data(c',row,')" id="c',row,'">',level1,'/',level2,'/',level3,'/',level4,'</span></li>'), file = htmlList, sep = "\n")
 
     }
   }

@@ -10,13 +10,18 @@ output:
 
 <script src="copyText.js"></script>
 
+```{r, echo=FALSE}
+source("functions.R")
+```
+
+
 ## Assigning taxonomy {.tabset}
 
 ### Statistics Taxonomy
 
-To add meta tags to your r-exams markdown file add `exsection:` to the `Meta-information` of your markdown file.
+To add a taxonomy path to your r-exams markdown file, add `exsection:` to the `Meta-information` of your markdown file.
 
-You can ad multiple sections by seperating with a comma. You can copy the desired path from the list below. You may add multiple path by seperation with a comma. No new lines allowed though.
+You can copy the desired paths from the list below. You may add multiple path by separating them with a comma. **No new lines allowed though**.
 
 ```{}
 Meta-information
@@ -30,16 +35,16 @@ exsection: Descriptive statistics / Summary Statistics / Measures of Location / 
 htmltools::includeHTML("taxonomy_list.html")
 ```
 
-### Meta information
+### Tags
 
-To add meta tags to your r-exams markdown file add ```exextra[]:` to the ```Meta-information` of your markdown file.
+To add tags to your r-exams markdown file add ```exextra[]:` to the ```Meta-information` of your markdown file.
 
 We have four categories that can be applied.
 
 #### Click to copy
 
 <ol class="bullet">
-<li><strong>Type:</strong> 
+<li><strong>`r copyOnClick("Type")`:</strong> 
 <span id="calc"  class="tag" onclick="copy_data(calc)">Calculation</span>
 <span id="cas1"  class="tag" onclick="copy_data(cas1)">Case</span>
 <span id="conc"  class="tag" onclick="copy_data(conc)">Conceptual</span>
@@ -50,9 +55,24 @@ We have four categories that can be applied.
 <span id="an"    class="tag" onclick="copy_data(an)">Performing analysis</span>
 <span id="tch"   class="tag" onclick="copy_data(tch)">Test choice</span>
 </li>
-<li>Program: SPSS, JASP, R, STATA, Excel, Calculator, Jamovi</li>
-<li>Language: English, Dutch</li>
-<li>Level: Statistical Literacy, Statistical Reasoning, Statistical Thinking</li>
+<li><strong>`r copyOnClick("Program")`</strong>: 
+`r copyOnClick("SPSS")`
+`r copyOnClick("JASP")`
+`r copyOnClick("R")`
+`r copyOnClick("STATA")`
+`r copyOnClick("Excel")`
+`r copyOnClick("Calculator")`
+`r copyOnClick("Jamovi")`
+</li>
+<li><strong>`r copyOnClick("Language")`</strong>: 
+`r copyOnClick("English")`
+`r copyOnClick("Dutch")`
+</li>
+<li><strong>`r copyOnClick("Level")`</strong>: 
+`r copyOnClick("Statistical Literacy")`
+`r copyOnClick("Statistical Reasoning")`
+`r copyOnClick("Statistical Thinking")`
+</li>
 </ol>
 
 You can use more than one tag per category. 
@@ -66,15 +86,55 @@ exextra[Language]: English
 exextra[Level]: Statistical Literacy
 ```
 
+#### Type descriptions
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, , results='asis', comment=NA}
+library(readxl) 
+library(kableExtra)
+type <- read_excel("source/Taxonomie ShareStats versie 17 maart 2021.xlsx", sheet = 2)
+
+# datatable(type[1:9,-2], rownames = FALSE)
+
+  # kbl(type[1:9,-2]) %>%
+  # kable_material(c("striped", "hover")) %>%
+  # kable_styling(full_width = F) %>%
+  # column_spec(1, bold = T, border_right = T) %>%
+  # column_spec(2, width = "30em") %>%
+  # column_spec(3, width = "30em")
+
+for(row in 1:9) {
+  
+  html.results <- cat(paste0("<h5><strong>",type[row,1],"</strong></h5><p>",type[row,3],"</p><p><strong>Example:</strong>: ", type[row,4],"</p>") )
+  
+}
+```
+
+#### Level descriptions
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 library(readxl)
-library(DT)
-type <- read_excel("source/Taxonomie ShareStats versie 17 maart 2021.xlsx", sheet = 2)
+level <- read_excel("source/Taxonomie ShareStats versie 17 maart 2021.xlsx", sheet = 3)
 
-datatable(type[1:9,-2])
+# datatable(type[1:9,-2], rownames = FALSE)
 ```
 
+<h5>`r level[1,1]`</h5>
+
+<p>`r level[1,2]`</p>
+
+<p><strong>Example</strong>: `r level[1,3]`</p>
+
+<h5>`r level[2,1]`</h5>
+
+<p>`r level[2,2]`</p>
+
+<p><strong>Example</strong>: `r level[2,3]`</p>
+
+<h5>`r level[3,1]`</h5>
+
+<p>`r level[3,2]`</p>
+
+<p><strong>Example</strong>: `r level[3,3]`</p>
 
 ## ShareStats project
 
