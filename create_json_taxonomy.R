@@ -25,6 +25,6 @@ get_taxonomie <- function(xlsx_file) {
 
 tax = get_taxonomie("source/Taxonomie ShareStats versie 17 maart 2021.xlsx")
 tax_list = ToListExplicit(tax, unname = TRUE, 
-                               nameName = "name", childrenName = "sublevels")
+                               nameName = "name", childrenName = "sublevels")$sublevels
                   
 write(toJSON(tax_list, indent=2), file="taxonomie.json")
