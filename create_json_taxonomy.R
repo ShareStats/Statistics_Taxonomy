@@ -46,6 +46,5 @@ taxonomy$AddChildNode(stats)
 taxonomy$AddChildNode(tags)
 
 # export to single JSON file
-tmp = ToListExplicit(taxonomy, unname = TRUE, 
-                          nameName = "name", childrenName = "sublevels")$sublevels
+tmp = ToListSimple(taxonomy, unname = TRUE)
 write(toJSON(tmp, indent=2), file="taxonomy.json")
