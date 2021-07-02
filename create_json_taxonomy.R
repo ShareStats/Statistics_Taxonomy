@@ -39,11 +39,18 @@ tags_df <- read_excel(file, sheet = 2) %>%
 
 # make taxonomy 
 stats = process_levels(stats_df, label="Statistics Taxonomy")
+
 tags = process_levels(tags_df, label="Tags")
+lvl  = Node$new("Level") # add level to tags manually
+lvl$AddChild("Statistical Literacy")
+lvl$AddChild("Statistical Reasoning")
+lvl$AddChild("Statistical Thinking")
+tags$AddChildNode(lvl)
 
 taxonomy = Node$new("base")
 taxonomy$AddChildNode(stats)
 taxonomy$AddChildNode(tags)
+
 
 # export to single JSON file
 tmp = ToListSimple(taxonomy, unname = TRUE)
