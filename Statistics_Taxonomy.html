@@ -749,7 +749,7 @@ Apply, Critique, Evaluate, Generalize
 </div>
 <div id="sharestats-project" class="section level2">
 <h2>ShareStats project</h2>
-<p>More information on the ShareStats project can be found on <a href="www.sharestats.nl">our website</a>.</p>
+<p>More information on the ShareStats project can be found on <a href="http://www.sharestats.nl">our website</a>.</p>
 </div>
 
 
@@ -790,6 +790,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')
