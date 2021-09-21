@@ -26,7 +26,7 @@ You can copy the desired paths from the list below. You may add multiple path by
 ```{}
 Meta-information
 ================
-exsection: Descriptive statistics / Summary Statistics / Measures of Location / Median, Descriptive statistics / Summary Statistics / Measures of Spread / Standard Deviation
+exsection: Descriptive statistics/Summary Statistics/Measures of Location/Median, Descriptive statistics/Summary Statistics/Measures of Spread/Standard Deviation
 ```
 
 #### Click to copy
@@ -44,7 +44,7 @@ We have four categories that can be applied.
 #### Click to copy
 
 <ol class="bullet">
-<li><strong>`r copyOnClick("Type")`:</strong> 
+<li><strong>`r copyOnClick("Type")`:</strong>
 <span id="calc"  class="tag" onclick="copy_data(calc)">Calculation</span>
 <span id="cas1"  class="tag" onclick="copy_data(cas1)">Case</span>
 <span id="conc"  class="tag" onclick="copy_data(conc)">Conceptual</span>
@@ -55,7 +55,7 @@ We have four categories that can be applied.
 <span id="an"    class="tag" onclick="copy_data(an)">Performing analysis</span>
 <span id="tch"   class="tag" onclick="copy_data(tch)">Test choice</span>
 </li>
-<li><strong>`r copyOnClick("Program")`</strong>: 
+<li><strong>`r copyOnClick("Program")`</strong>:
 `r copyOnClick("SPSS")`
 `r copyOnClick("JASP")`
 `r copyOnClick("R")`
@@ -64,18 +64,18 @@ We have four categories that can be applied.
 `r copyOnClick("Calculator")`
 `r copyOnClick("Jamovi")`
 </li>
-<li><strong>`r copyOnClick("Language")`</strong>: 
+<li><strong>`r copyOnClick("Language")`</strong>:
 `r copyOnClick("English")`
 `r copyOnClick("Dutch")`
 </li>
-<li><strong>`r copyOnClick("Level")`</strong>: 
+<li><strong>`r copyOnClick("Level")`</strong>:
 `r copyOnClick("Statistical Literacy")`
 `r copyOnClick("Statistical Reasoning")`
 `r copyOnClick("Statistical Thinking")`
 </li>
 </ol>
 
-You can use more than one tag per category. 
+You can use more than one tag per category.
 
 ```{}
 Meta-information
@@ -89,7 +89,7 @@ exextra[Level]: Statistical Literacy
 #### Type descriptions
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, , results='asis', comment=NA}
-library(readxl) 
+library(readxl)
 library(kableExtra)
 type <- read_excel("source/Taxonomie ShareStats versie 17 maart 2021.xlsx", sheet = 2)
 
@@ -103,9 +103,9 @@ type <- read_excel("source/Taxonomie ShareStats versie 17 maart 2021.xlsx", shee
   # column_spec(3, width = "30em")
 
 for(row in 1:9) {
-  
+
   html.results <- cat(paste0("<h5><strong>",type[row,1],"</strong></h5><p>",type[row,3],"</p><p><strong>Example:</strong>: ", type[row,4],"</p>") )
-  
+
 }
 ```
 
@@ -138,4 +138,4 @@ level <- read_excel("source/Taxonomie ShareStats versie 17 maart 2021.xlsx", she
 
 ## ShareStats project
 
-More information on the ShareStats project can be found on [our website](www.sharestats.nl).
+More information on the ShareStats project can be found on [our website](http://www.sharestats.nl).
