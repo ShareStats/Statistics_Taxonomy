@@ -18,10 +18,14 @@ assessment.network <- read_excel("taxonomy_tree.xlsx")
 
 # convert parend and child numbers to name string
 
+assessment.network <- merge(assessment.network, assessment.network[,c("child", "name_en")], by.x = "parent", by.y = "child", all.x = TRUE)
+
+assessment.network$parent = assessment.network$name_en.y
+assessment.network$child  = assessment.network$name_en.x
 
 collapsibleTreeNetwork(
   assessment.network,
-  attribute = "name_en"
+  attribute = "title"
   # tooltipHtml = "tooltip",
   # zoomable = FALSE
 )
