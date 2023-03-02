@@ -1,0 +1,29 @@
+---
+title: "Statistics Taxonomy Tree"
+author: "Klinkenberg"
+format: html
+---
+
+```{r}
+# install.packages("devtools") # if you have not installed "devtools" package
+# devtools::install_github("ShKlinkenberg/collapsibleTree")
+library(readxl)
+library("collapsibleTree")
+assessment.network <- read_excel("taxonomy_tree.xlsx")
+# tooltip.text = '<h3>%s</h3>\n<p>%s</p>\n<p>Go <a href="%s">Here</a></p>'
+# assessment.network$tooltip <- sprintf(tooltip.text, 
+#                                       assessment.network$title, 
+#                                       "Look at this", 
+#                                       "https://www.surf.nl")
+
+# convert parend and child numbers to name string
+
+
+collapsibleTreeNetwork(
+  assessment.network,
+  attribute = "name_en"
+  # tooltipHtml = "tooltip",
+  # zoomable = FALSE
+)
+```
+

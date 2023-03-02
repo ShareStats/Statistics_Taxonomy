@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.280">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Klinkenberg">
+
+<title>Statistics Taxonomy Tree</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="taxonomy_tree_files/libs/clipboard/clipboard.min.js"></script>
+<script src="taxonomy_tree_files/libs/quarto-html/quarto.js"></script>
+<script src="taxonomy_tree_files/libs/quarto-html/popper.min.js"></script>
+<script src="taxonomy_tree_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="taxonomy_tree_files/libs/quarto-html/anchor.min.js"></script>
+<link href="taxonomy_tree_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="taxonomy_tree_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="taxonomy_tree_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="taxonomy_tree_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="taxonomy_tree_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="taxonomy_tree_files/libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<script src="taxonomy_tree_files/libs/d3-4.10.2/d3.min.js"></script>
+<link href="taxonomy_tree_files/libs/collapsibleTree-0.1.6/collapsibleTree.css" rel="stylesheet">
+<script src="taxonomy_tree_files/libs/collapsibleTree-binding-0.1.7/collapsibleTree.js"></script>
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Statistics Taxonomy Tree</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Klinkenberg </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("devtools") # if you have not installed "devtools" package</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># devtools::install_github("ShKlinkenberg/collapsibleTree")</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"collapsibleTree"</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>assessment.network <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"taxonomy_tree.xlsx"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># tooltip.text = '&lt;h3&gt;%s&lt;/h3&gt;\n&lt;p&gt;%s&lt;/p&gt;\n&lt;p&gt;Go &lt;a href="%s"&gt;Here&lt;/a&gt;&lt;/p&gt;'</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># assessment.network$tooltip &lt;- sprintf(tooltip.text, </span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">#                                       assessment.network$title, </span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">#                                       "Look at this", </span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">#                                       "https://www.surf.nl")</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">collapsibleTreeNetwork</span>(</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  assessment.network,</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">attribute =</span> <span class="st">"name_en"</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># tooltipHtml = "tooltip",</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># zoomable = FALSE</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div id="htmlwidget-5126310e2aa890b35eb1" style="width:100%;height:464px;" class="collapsibleTree html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5126310e2aa890b35eb1">{"x":{"data":{"name":"1","WeightOfNode":"Statistics Taxonomy","children":[{"name":"2","WeightOfNode":"Measurement Level","children":[{"name":"3","WeightOfNode":"Nominal"},{"name":"4","WeightOfNode":"Ordinal"},{"name":"5","WeightOfNode":"Interval"},{"name":"6","WeightOfNode":"Ratio"}]},{"name":"7","WeightOfNode":"Variable type","children":[{"name":"8","WeightOfNode":"Discrete variable"},{"name":"9","WeightOfNode":"Continuous variable"}]},{"name":"10","WeightOfNode":"Descriptive statistics","children":[{"name":"11","WeightOfNode":"Summary Statistics","children":[{"name":"12","WeightOfNode":"Measures of Location","children":[{"name":"13","WeightOfNode":"Mean"},{"name":"14","WeightOfNode":"Median"},{"name":"15","WeightOfNode":"Mode"}]},{"name":"24","WeightOfNode":"Outliers"},{"name":"25","WeightOfNode":"Odds ratio"},{"name":"26","WeightOfNode":"Proportion"},{"name":"27","WeightOfNode":"Conditional proportion"}]},{"name":"16","WeightOfNode":"Measures of Spread","children":[{"name":"17","WeightOfNode":"Range"},{"name":"18","WeightOfNode":"Standard Deviation"},{"name":"19","WeightOfNode":"Variance"},{"name":"20","WeightOfNode":"Interquartile Range"}]},{"name":"21","WeightOfNode":"Bivariate statistics","children":[{"name":"22","WeightOfNode":"Correlation"},{"name":"23","WeightOfNode":"Covariance"}]},{"name":"28","WeightOfNode":"Score interpretation","children":[{"name":"29","WeightOfNode":"z-score"},{"name":"30","WeightOfNode":"Percentile"}]},{"name":"31","WeightOfNode":"Data representation","children":[{"name":"32","WeightOfNode":"Graphs","children":[{"name":"33","WeightOfNode":"Histogram"},{"name":"34","WeightOfNode":"Bar graph"},{"name":"35","WeightOfNode":"Boxplot"},{"name":"36","WeightOfNode":"Scatterplot"},{"name":"37","WeightOfNode":"Pie chart"},{"name":"38","WeightOfNode":"Venn diagram"},{"name":"39","WeightOfNode":"Stem and leaf plot"}]},{"name":"40","WeightOfNode":"Tables","children":[{"name":"41","WeightOfNode":"Frequency table"},{"name":"42","WeightOfNode":"Contingency table"}]}]}]},{"name":"43","WeightOfNode":"Inferential Statistics","children":[{"name":"44","WeightOfNode":"Sampling Distributions","children":[{"name":"45","WeightOfNode":"Sample mean"},{"name":"46","WeightOfNode":"Sample proportion"},{"name":"47","WeightOfNode":"Difference two means"},{"name":"48","WeightOfNode":"Correlation"}]},{"name":"49","WeightOfNode":"NHST","children":[{"name":"50","WeightOfNode":"Hypothesis","children":[{"name":"51","WeightOfNode":"Null hypothesis"},{"name":"52","WeightOfNode":"Alternative hypothesis"},{"name":"53","WeightOfNode":"One sided hypothesis"},{"name":"54","WeightOfNode":"Two sided hypothesis"}]},{"name":"55","WeightOfNode":"Test statistic","children":[{"name":"56","WeightOfNode":"t-statistic"},{"name":"57","WeightOfNode":"F-statistic"},{"name":"58","WeightOfNode":"Chi-squared"},{"name":"59","WeightOfNode":"z-statistic"}]},{"name":"60","WeightOfNode":"Statistical errors","children":[{"name":"61","WeightOfNode":"Type I error"},{"name":"62","WeightOfNode":"Type II error"}]},{"name":"63","WeightOfNode":"Power"},{"name":"64","WeightOfNode":"Significance level","children":[{"name":"65","WeightOfNode":"Critical value"}]},{"name":"66","WeightOfNode":"p-value"}]},{"name":"67","WeightOfNode":"Effect size","children":[{"name":"68","WeightOfNode":"Cohen's d"},{"name":"69","WeightOfNode":"Cramer's V"},{"name":"70","WeightOfNode":"Phi coefficient"},{"name":"71","WeightOfNode":"Eta squared"},{"name":"72","WeightOfNode":"Omega squared"}]},{"name":"73","WeightOfNode":"Confidence Intervals","children":[{"name":"74","WeightOfNode":"Confidence level"},{"name":"75","WeightOfNode":"Testing"},{"name":"76","WeightOfNode":"Width"},{"name":"77","WeightOfNode":"Margin of error"}]},{"name":"78","WeightOfNode":"Parametric Techniques","children":[{"name":"79","WeightOfNode":"z-test","children":[{"name":"80","WeightOfNode":"One sample mean"},{"name":"81","WeightOfNode":"Independent samples means"},{"name":"82","WeightOfNode":"One proportion"},{"name":"83","WeightOfNode":"Two proportions"}]},{"name":"84","WeightOfNode":"t-test","children":[{"name":"85","WeightOfNode":"One sample mean"},{"name":"86","WeightOfNode":"Independent samples means"},{"name":"87","WeightOfNode":"Paired samples"},{"name":"88","WeightOfNode":"Test for correlation"}]},{"name":"89","WeightOfNode":"Correlations","children":[{"name":"90","WeightOfNode":"Pearson"},{"name":"91","WeightOfNode":"Spearman"},{"name":"92","WeightOfNode":"Point biserial"},{"name":"93","WeightOfNode":"Biserial"},{"name":"94","WeightOfNode":"Phi"}]},{"name":"95","WeightOfNode":"Cross tables","children":[{"name":"96","WeightOfNode":"Chi-Squared for Independence"},{"name":"97","WeightOfNode":"Chi-Squared for Homogeneity"},{"name":"98","WeightOfNode":"Chi-Squared Goodness of Fit"},{"name":"99","WeightOfNode":"Fisher's Exact Test"}]},{"name":"100","WeightOfNode":"ANOVA","children":[{"name":"101","WeightOfNode":"Oneway ANOVA"},{"name":"102","WeightOfNode":"Twoway ANOVA"},{"name":"103","WeightOfNode":"Oneway repeated measures ANOVA"},{"name":"104","WeightOfNode":"Twoway repeated measures ANOVA"},{"name":"105","WeightOfNode":"Mixed design ANOVA"},{"name":"106","WeightOfNode":"ANCOVA"},{"name":"107","WeightOfNode":"MANOVA"},{"name":"108","WeightOfNode":"MANCOVA"},{"name":"109","WeightOfNode":"ANOVA F-test"},{"name":"110","WeightOfNode":"Post-hoc test"}]},{"name":"111","WeightOfNode":"Variance","children":[{"name":"112","WeightOfNode":"One variance"},{"name":"113","WeightOfNode":"Two variances"}]}]},{"name":"114","WeightOfNode":"Regression","children":[{"name":"115","WeightOfNode":"Simple linear regression"},{"name":"116","WeightOfNode":"Equation"},{"name":"117","WeightOfNode":"Slope"},{"name":"118","WeightOfNode":"Intercept"},{"name":"119","WeightOfNode":"Prediction"},{"name":"120","WeightOfNode":"Residuals"},{"name":"121","WeightOfNode":"Sum of squares"},{"name":"122","WeightOfNode":"Regression F-test"},{"name":"123","WeightOfNode":"R squared"},{"name":"124","WeightOfNode":"Standard error of the estimate"},{"name":"125","WeightOfNode":"Standardized coefficient"},{"name":"126","WeightOfNode":"Dummies"},{"name":"127","WeightOfNode":"Confidence interval"},{"name":"128","WeightOfNode":"Prediction interval"},{"name":"129","WeightOfNode":"Coefficient t-test"},{"name":"130","WeightOfNode":"Multiple linear regression","children":[{"name":"131","WeightOfNode":"F-test for comparing (nested) models"},{"name":"132","WeightOfNode":"R squared change"},{"name":"133","WeightOfNode":"Moderation"},{"name":"134","WeightOfNode":"Mediation"},{"name":"135","WeightOfNode":"Suppression"}]},{"name":"136","WeightOfNode":"Principal axis regression"},{"name":"137","WeightOfNode":"Logistic regression","children":[{"name":"138","WeightOfNode":"Odds"},{"name":"139","WeightOfNode":"Odds ratio"}]},{"name":"140","WeightOfNode":"Probit regression"},{"name":"141","WeightOfNode":"Multinomial logistic regression"}]},{"name":"142","WeightOfNode":"Non-parametric Techniques","children":[{"name":"143","WeightOfNode":"Sign test"},{"name":"144","WeightOfNode":"Rank Sum test"},{"name":"145","WeightOfNode":"Signed Rank test"},{"name":"146","WeightOfNode":"Kruskal-Wallis test"},{"name":"147","WeightOfNode":"Friedman's test"},{"name":"148","WeightOfNode":"Permutation test"}]},{"name":"149","WeightOfNode":"Bootstrap"},{"name":"150","WeightOfNode":"Bayesian Statistics","children":[{"name":"151","WeightOfNode":"Prior"},{"name":"152","WeightOfNode":"Likelihood"},{"name":"153","WeightOfNode":"Posterior"},{"name":"154","WeightOfNode":"Credible intervals"},{"name":"155","WeightOfNode":"Hypothesis test"},{"name":"156","WeightOfNode":"Bayes factor"},{"name":"157","WeightOfNode":"Parameter estimation"},{"name":"158","WeightOfNode":"Informative hypothesis testing"}]},{"name":"159","WeightOfNode":"Time Series","children":[{"name":"160","WeightOfNode":"Descriptive methods"},{"name":"161","WeightOfNode":"Autocorrelation"},{"name":"162","WeightOfNode":"Runs test"},{"name":"163","WeightOfNode":"Seasonal variation"},{"name":"164","WeightOfNode":"Arima models"},{"name":"165","WeightOfNode":"Forecasting"},{"name":"166","WeightOfNode":"Frequency domain"}]},{"name":"167","WeightOfNode":"Multilevel Analysis"}]},{"name":"168","WeightOfNode":"Probability","children":[{"name":"169","WeightOfNode":"Elementary Probability","children":[{"name":"170","WeightOfNode":"Sample Space"},{"name":"171","WeightOfNode":"Events"},{"name":"172","WeightOfNode":"General Rules","children":[{"name":"173","WeightOfNode":"Intersection"},{"name":"174","WeightOfNode":"Union"},{"name":"175","WeightOfNode":"Addition rule"},{"name":"176","WeightOfNode":"Multiplication rule"},{"name":"177","WeightOfNode":"Independent events"}]},{"name":"178","WeightOfNode":"Combinations"},{"name":"179","WeightOfNode":"Permutations"},{"name":"180","WeightOfNode":"Conditional probability"},{"name":"181","WeightOfNode":"Random variables","children":[{"name":"182","WeightOfNode":"Expected value"},{"name":"183","WeightOfNode":"Variance"},{"name":"184","WeightOfNode":"Rules for expected values"},{"name":"185","WeightOfNode":"Random sample"}]}]}]},{"name":"186","WeightOfNode":"Distributions","children":[{"name":"187","WeightOfNode":"Discrete","children":[{"name":"188","WeightOfNode":"Binomial"},{"name":"189","WeightOfNode":"Normal approximation to Binomial"},{"name":"190","WeightOfNode":"Bernoulli"},{"name":"191","WeightOfNode":"Geometric"},{"name":"192","WeightOfNode":"Negative Binomial"},{"name":"193","WeightOfNode":"Poisson"},{"name":"194","WeightOfNode":"Hypergeometric"},{"name":"195","WeightOfNode":"Multinominal"}]},{"name":"196","WeightOfNode":"Continuous","children":[{"name":"197","WeightOfNode":"Normal"},{"name":"198","WeightOfNode":"Uniform"},{"name":"199","WeightOfNode":"Exponential"},{"name":"200","WeightOfNode":"Gamma"},{"name":"201","WeightOfNode":"t-distribution"},{"name":"202","WeightOfNode":"F-distribution"},{"name":"203","WeightOfNode":"Chi-squared"},{"name":"204","WeightOfNode":"Beta"}]},{"name":"205","WeightOfNode":"Limit Theorems","children":[{"name":"206","WeightOfNode":"Central Limit Theorem"},{"name":"207","WeightOfNode":"Law of Large Numbers"}]}]},{"name":"208","WeightOfNode":"Assumptions","children":[{"name":"209","WeightOfNode":"Homogeneity of variance","children":[{"name":"210","WeightOfNode":"Levene's test"},{"name":"211","WeightOfNode":"Ratio of sample size"},{"name":"212","WeightOfNode":"Ratio of variance"}]},{"name":"213","WeightOfNode":"Sphericity","children":[{"name":"214","WeightOfNode":"Mauchly's test"},{"name":"215","WeightOfNode":"Epsilon"}]},{"name":"216","WeightOfNode":"Normality","children":[{"name":"217","WeightOfNode":"Shapiro-Wilks"},{"name":"218","WeightOfNode":"Kolmogorov-Smirnov"},{"name":"219","WeightOfNode":"Q-Q plot"}]},{"name":"220","WeightOfNode":"Linearity"},{"name":"221","WeightOfNode":"Homoscedasticity","children":[{"name":"222","WeightOfNode":"Residual plot"}]},{"name":"223","WeightOfNode":"Multicolinearity","children":[{"name":"224","WeightOfNode":"VIF"},{"name":"225","WeightOfNode":"Tolerance"}]}]},{"name":"226","WeightOfNode":"Factor analysis","children":[{"name":"227","WeightOfNode":"Principle component analysis"},{"name":"228","WeightOfNode":"Exploratory factor analysis"},{"name":"229","WeightOfNode":"Confirmatory factor analysis"},{"name":"230","WeightOfNode":"Rotations"},{"name":"231","WeightOfNode":"Eigenvalues"},{"name":"232","WeightOfNode":"Factor loadings"},{"name":"233","WeightOfNode":"Explained variance"},{"name":"234","WeightOfNode":"Compontent correlation matrix"},{"name":"235","WeightOfNode":"Scree plot"},{"name":"236","WeightOfNode":"Pattern matrix"},{"name":"237","WeightOfNode":"Structure matrix"},{"name":"238","WeightOfNode":"Factor correlation matrix"},{"name":"239","WeightOfNode":"Communalities"},{"name":"240","WeightOfNode":"Factor scores"}]},{"name":"241","WeightOfNode":"Reliability","children":[{"name":"242","WeightOfNode":"Analysis","children":[{"name":"243","WeightOfNode":"Cronbach's alpha"},{"name":"244","WeightOfNode":"Split half"},{"name":"245","WeightOfNode":"Test-retest"},{"name":"246","WeightOfNode":"Parallel forms"}]},{"name":"247","WeightOfNode":"Descriptives","children":[{"name":"248","WeightOfNode":"RIT"},{"name":"249","WeightOfNode":"RIR"},{"name":"250","WeightOfNode":"proportion correct"}]}]}]},"options":{"hierarchy":[1,2,3,4,5],"input":null,"attribute":"name_en","linkLength":null,"fontSize":10,"tooltip":true,"collapsed":true,"zoomable":true,"margin":{"top":20,"bottom":20,"left":30,"right":40},"fill":"lightsteelblue"}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
