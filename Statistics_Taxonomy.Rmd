@@ -35,6 +35,35 @@ exsection: Descriptive statistics/Summary Statistics/Measures of Location/Median
 htmltools::includeHTML("taxonomy_list.html")
 ```
 
+### Visual
+
+```{r, echo=FALSE}
+# install.packages("devtools") # if you have not installed "devtools" package
+# devtools::install_github("ShKlinkenberg/collapsibleTree")
+library(readxl)
+library("collapsibleTree")
+assessment.network <- read_excel("taxonomy_tree.xlsx")
+# tooltip.text = '<h3>%s</h3>\n<p>%s</p>\n<p>Go <a href="%s">Here</a></p>'
+# assessment.network$tooltip <- sprintf(tooltip.text, 
+#                                       assessment.network$title, 
+#                                       "Look at this", 
+#                                       "https://www.surf.nl")
+
+# convert parend and child numbers to name string
+
+assessment.network <- merge(assessment.network, assessment.network[,c("child", "name_en")], by.x = "parent", by.y = "child", all.x = TRUE)
+
+assessment.network$parent = assessment.network$name_en.y
+assessment.network$child  = assessment.network$name_en.x
+
+collapsibleTreeNetwork(
+  assessment.network,
+  attribute = "title"
+  # tooltipHtml = "tooltip",
+  # zoomable = FALSE
+)
+```
+
 ### Tags
 
 To add tags to your r-exams markdown file add ```exextra[]:` to the ```Meta-information` of your markdown file.
